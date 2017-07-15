@@ -52,5 +52,5 @@ New and existing members of the Milan Woods community in Durham, NC
 *Coming Soon*
 
 ## Contributors
-+ [Adrian Jense](https://github.com/katiearina "GitHub - Adrian") :facepunch:
++ [Adrian Jensen](https://github.com/katiearina "GitHub - Adrian") :facepunch:
 + [Katie Geckle](https://github.com/katiearina "GitHub - Katie") :boom:
