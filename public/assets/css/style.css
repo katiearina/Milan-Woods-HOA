@@ -1,12 +1,10 @@
 .jumbotron {
-  position:relative;
   margin-bottom: 0px;
 }
 
 nav {
   margin-top: 0px;
   width: 100%;
-  z-index: 2;
 }
 
 .col-9 {
