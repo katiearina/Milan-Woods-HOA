@@ -1,0 +1,11 @@
+.jumbotron {
+  position:relative;
+  padding-bottom: 100px;
+}
+
+nav {
+  position: absolute !important;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
