@@ -20,7 +20,7 @@ nav {
 }
 
 #main-row {
-  min-height: 100%;
+  min-height: 80vh;
 }
 
 /* Leave footer CSS at the bottom */
