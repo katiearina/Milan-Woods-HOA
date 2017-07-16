@@ -1,6 +1,7 @@
 .jumbotron {
   position:relative;
   padding-bottom: 100px;
+  margin-bottom: 0px;
 }
 
 nav {
@@ -8,4 +9,12 @@ nav {
   bottom: 0px;
   left: 0px;
   right: 0px;
+}
+
+.col-9 {
+  background-color: turquoise;
+}
+
+.col-3 {
+  background-color: blueviolet;
 }
