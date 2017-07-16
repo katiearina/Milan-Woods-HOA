@@ -4,6 +4,7 @@ var bodyParser = require("body-parser");
 var logger = require("morgan");
 var dotenv = require("dotenv");
 var mongoose = require("mongoose");
+var path = require("path");
 // Create a new express apps
 var app = express();
 
