@@ -1,12 +1,11 @@
 var express = require('express');
+var path = require("path");
 var router = express.Router();
 var pet_controller = require("../app/config/internal-api-routes");
 var path = require("path");
 // Render index.html
-
-router.get('/home', function(req, res) {
-    console.log("In ROOT")
-    res.sendFile(path.join(__dirname,'../public','index-design.html'));
+router.get('/home', function(res, res) {
+      res.sendFile(path.join(__dirname, '../public', 'index-design.html'));
 });
 
 // call route to list pet date
