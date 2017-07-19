@@ -4,7 +4,7 @@ var router = express.Router();
 var pet_controller = require("../app/config/internal-api-routes");
 var path = require("path");
 // Render index.html
-router.get('/home', function(res, res) {
+router.get('/', function(res, res) {
       res.sendFile(path.join(__dirname, '../public', 'index-design.html'));
 });
 
