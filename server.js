@@ -32,9 +32,6 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Path for static content
 app.use(express.static(path.join(__dirname, "public")));
 
-// Launch at app root location
-// app.use('/', routes);
-
 // Import routes and give the server access to them
 require("./routes/routes.js")(app);
 
