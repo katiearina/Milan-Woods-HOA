@@ -5,8 +5,8 @@ var React = require("react");
 var Header = require("./children/static/Header");
 var NavBar = require("./children/static/Navbar");
 var Footer = require("./children/static/Footer");
-// var PetDirectoryForm = require("./children/Pet-Directory-Form");
-// var PetDirectory = require("./children/Pet-Directory");
+var PetDirectoryForm = require("./children/Pet-Directory-Form");
+var PetDirectory = require("./children/Pet-Directory");
 
 var Main = React.createClass({
     render: function() {
