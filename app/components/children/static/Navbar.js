@@ -1,4 +1,5 @@
 var React = require("react");
+var Link = require("react-router").Link;
 
 var Navbar = React.createClass({
   render: function() {
@@ -27,13 +28,13 @@ var Navbar = React.createClass({
 
             <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
+                Pet Directory
                 </a>
 
               <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a className="dropdown-item" href="#">Action</a>
-                <a className="dropdown-item" href="#">Another action</a>
-                <a className="dropdown-item" href="#">Something else here</a>
+                <a className="dropdown-item" href="#PetList">View Directory</a>
+                <a className="dropdown-item" href="#PetForm">Add Pet to Directory</a>
+                {/* <a className="dropdown-item" href="#">Something else here</a> */}
               </div>
             </li>
 
