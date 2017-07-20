@@ -28,10 +28,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
-// Set public as static folder location
-app.use(express.static("public"));
+
+// Path for static content
+app.use(express.static(path.join(__dirname, "public")));
+
 // Launch at app root location
-app.use('/', routes);
+// app.use('/', routes);
+
+// Import routes and give the server access to them
+require("./routes/routes.js")(app);
 
 // URI for Heroku deployment
 var db = process.env.MONGODB_URI || "mongodb://localhost/petDirectory";
