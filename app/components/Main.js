@@ -8,7 +8,11 @@ var Footer = require("./children/static/Footer");
 var PetDirectoryForm = require("./children/Pet-Directory-Form");
 var PetDirectory = require("./children/Pet-Directory");
 
+var helpers = require("./utils/helpers");
+
+
 var Main = React.createClass({
+
     render: function() {
         return (
             <div className="container">
