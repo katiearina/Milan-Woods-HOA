@@ -1,10 +1,24 @@
 var React = require("react");
 
+var helpers = require("../utils/helpers");
+
 var PetDirectoryForm = React.createClass({
+
+    handleSubmit: function(event) {
+    // prevent the HTML from trying to submit a form if the user hits "Enter" instead of
+    // clicking the button
+    event.preventDefault();
+      console.log("HELP");
+    helpers.listQuery().then(function(response) {
+
+    console.log(response);
+   }.bind(this));
+  },
+
   render: function() {
     return (
 
-    <form method="post">
+    <form onSubmit={this.handleSubmit}>
      <div className="form-group ">
       <label className="control-label requiredField" for="petname">
        Pet Name

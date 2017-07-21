@@ -1,6 +1,9 @@
 var React = require("react");
 
+var helpers = require("../utils/helpers");
+
 var PetDirectory = React.createClass({
+
   render: function() {
     return (
         <div className="panel panel-default">
