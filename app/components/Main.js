@@ -20,15 +20,19 @@ var Main = React.createClass({
             <div className="container" id="wrap">
                 <Header />
                 <Navbar />
-                <div className="row">
-                <div className="col-9"> 
-                  <div className="main container">
-                      {this.props.children}
-                  </div> 
+
+                <div className="row" id="main-row">
+
+                  {/*<Main Content />*/}
+                  <div className="col-9"> 
+                    <div className="main container">
+                        {this.props.children}
+                    </div> 
+                  </div>
+                  <Sidebar />
+
                 </div>
-                    {/*<Content />*/}
-                    <Sidebar />
-                </div>
+
             </div>
             <Footer />
             </div>

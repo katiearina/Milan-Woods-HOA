@@ -3,7 +3,7 @@
 }
 
 .container {
-  width: 100vw;
+  width: 100vw; 
 }
 
 nav {
@@ -40,7 +40,7 @@ html, body {
 	/* Negative indent footer by its height */
 	/* margin: 0px auto -40px; */
 	/* Pad bottom by footer height */
-	 padding: 0px 0px; 
+	padding: 0px 0px;   
 }  
 
 /* Sticky footer styling! */
