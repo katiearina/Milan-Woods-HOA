@@ -2,6 +2,10 @@
   margin-bottom: 0px;
 }
 
+.container {
+  width: 100vw;
+}
+
 nav {
   margin-top: 0px;
   width: 100%;
@@ -30,14 +34,14 @@ html, body {
 }
 
 /* Wrapper for page content to push down footer */
-#wrap, #app {
-	min-height: 100%;
+  #wrap {
+	min-height: 100vh;
 	height: auto;
 	/* Negative indent footer by its height */
-	margin: 0px auto -40px;
+	/* margin: 0px auto -40px; */
 	/* Pad bottom by footer height */
-	padding: 0px 0px 40px 0px;
-}
+	/* padding: 0px 0px 40px 0px; */
+}  
 
 /* Sticky footer styling! */
 #footer {

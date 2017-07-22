@@ -12,12 +12,12 @@ var PetDirectory = require("./children/Pet-Directory");
 
 var helpers = require("./utils/helpers");
 
-
 var Main = React.createClass({
 
     render: function() {
         return (
-            <div className="container">
+          <div>
+            <div className="container" id="wrap">
                 <Header />
                 <Navbar />
                 <div className="row">
@@ -29,7 +29,8 @@ var Main = React.createClass({
                     {/*<Content />*/}
                     <Sidebar />
                 </div>
-                <Footer />
+            </div>
+            <Footer />
             </div>
         );
     }
