@@ -20,6 +20,11 @@ var IndexRoute = router.IndexRoute;
 
 // Reference the high-level components
 var Main = require("../components/Main");
+var Content = require("../components/children/static/Content");
+var ArcApp = require("../components/children/ARC-Application");
+var BoardMembers = require("../components/children/Board-Members");
+var CollectionSchedule = require("../components/children/Collection-Schedule");
+var GoverningDocs = require("../components/children/Governing-Docs");
 var PetDirectoryForm = require("../components/children/Pet-Directory-Form");
 var PetDirectory = require("../components/children/Pet-Directory");
 
@@ -31,9 +36,15 @@ module.exports = (
 
     <Route path="/" component={Main}>
 
+      <Route path="ArcApp" component={ArcApp} />
+      <Route path="BoardMembers" component={BoardMembers} />
+      <Route path="Collection" component={CollectionSchedule} />
+      <Route path="GoverningDocs" component={GoverningDocs} />
       <Route path="PetForm" component={PetDirectoryForm} />
-      <Route path="PetList" component={PetDirectory} />
-      <IndexRoute component={PetDirectory} />
+      <Route path="PetDirectory" component={PetDirectory} />
+
+      {/* Default path */}
+      <IndexRoute component={Content} />
 
     </Route>
   </Router>
