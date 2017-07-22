@@ -25,6 +25,14 @@ nav {
   min-height: 80vh;
 }
 
+#pageHeader {
+  font-family: 'Stint Ultra Expanded', cursive; 
+}
+
+h5 {
+  font-family: 'Sacramento', cursive;
+}
+
 /* Leave footer CSS at the bottom */
 /*----------------------------------------------*/
 /* Sticky footer positioning and to get rid of weird L-R scroll bar */
