@@ -16,15 +16,19 @@ var Navbar = React.createClass({
           <ul className="navbar-nav">
 
             <li className="nav-item active">
-              <a className="nav-link" href="#">Something<span className="sr-only">(current)</span></a>
+              <Link to="/ArcApp"><a className="nav-link">ARC Application<span className="sr-only">(current)</span></a></Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">Features</a>
+              <Link to="/BoardMembers"><a className="nav-link">Current Board Members</a></Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">Pricing</a>
+              <Link to="/Collection"><a className="nav-link">Collection Schedule</a></Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to="/GoverningDocs"><a className="nav-link">Governing Documents</a></Link>
             </li>
 
             <li className="nav-item dropdown">
@@ -33,8 +37,8 @@ var Navbar = React.createClass({
                 </a>
 
               <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a className="dropdown-item" href="#PetList">View Directory</a>
-                <a className="dropdown-item" href="#PetForm">Add Pet to Directory</a>
+                <Link to="/PetDirectory"><a className="dropdown-item">View Directory</a></Link>
+                <Link to="/PetForm"><a className="dropdown-item">Add Pet to Directory</a></Link>
                 {/* <a className="dropdown-item" href="#">Something else here</a> */}
               </div>
             </li>

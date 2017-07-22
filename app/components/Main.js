@@ -21,7 +21,12 @@ var Main = React.createClass({
                 <Header />
                 <Navbar />
                 <div className="row">
-                    <Content />
+                <div className="col-9"> 
+                  <div className="main container">
+                      {this.props.children}
+                  </div> 
+                </div>
+                    {/*<Content />*/}
                     <Sidebar />
                 </div>
                 <Footer />
