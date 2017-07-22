@@ -1,6 +1,7 @@
 html, body {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
+  background-image: url("../images/header-trees-small.jpg");
 }
 
 a:link, a:visited {
@@ -48,11 +49,12 @@ h6 {
 
 .jumbotron {
   margin-bottom: 0px;
-  background-color: #AFCAC4;
+  /* background-color: #26A96C; */
+  /* background-image: url("https://user-images.githubusercontent.com/22947371/28494517-1382df88-6eff-11e7-9d30-3bf25de1946e.jpg"); */
 }
 
 .navbar {
-  background-color: #365B36;
+  background-color: #32936F;
   min-height: 60px;
 }
 
@@ -67,12 +69,12 @@ nav {
 
 .col-9 {
   padding-top: 20px;
-  background-color: #F89B36;
+  /* background-color: #2BC016; */
 }
 
 .col-3 {
   padding-top: 20px;
-  background-color: #FB4539;
+  /* background-color: #387D7A; */
 }
 
 #main-row {
@@ -102,7 +104,7 @@ html, body {
 	/* Must match margin-bottom in .wrapper CSS */
 	/* Set the fixed height of the footer here */
   height: 40px;
-  background-color: #8D295B;
+  background-color: #395E66;
   color: black;
 	overflow: auto;
 	margin-top: 0px;
@@ -113,5 +115,7 @@ html, body {
 }
 
 #footer p {
-    margin-bottom: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  margin-bottom: 0;
 }
