@@ -4,7 +4,7 @@ var Sidebar = React.createClass({
   render: function() {
     return (
       <div className="col-3"> 
-        <div className="sidebar container"> 
+        <div className="sidebar"> 
           <h4>Sidebar Test</h4> 
         </div> 
       </div> 

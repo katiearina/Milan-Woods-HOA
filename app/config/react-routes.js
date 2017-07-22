@@ -20,7 +20,7 @@ var IndexRoute = router.IndexRoute;
 
 // Reference the high-level components
 var Main = require("../components/Main");
-var Content = require("../components/children/static/Content");
+var Home = require("../components/children/static/Home");
 var ArcApp = require("../components/children/ARC-Application");
 var BoardMembers = require("../components/children/Board-Members");
 var CollectionSchedule = require("../components/children/Collection-Schedule");
@@ -44,7 +44,7 @@ module.exports = (
       <Route path="PetDirectory" component={PetDirectory} />
 
       {/* Default path */}
-      <IndexRoute component={Content} />
+      <IndexRoute component={Home} />
 
     </Route>
   </Router>

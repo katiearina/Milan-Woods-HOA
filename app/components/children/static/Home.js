@@ -2,7 +2,7 @@ var React = require("react");
 var PetDirectoryForm = require("../Pet-Directory-Form");
 var PetDirectory = require("../Pet-Directory");
 
-var Content = React.createClass({
+var Home = React.createClass({
   render: function() {
     return (
       <div>
@@ -12,4 +12,4 @@ var Content = React.createClass({
   }
 });
 
-module.exports = Content;
+module.exports = Home;

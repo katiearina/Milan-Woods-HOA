@@ -15,7 +15,7 @@ a:hover {
 
 .nav-link, .nav-link:visited, .nav-link:active {
   text-decoration: none;
-  color: black !important;
+  color: #E4E7EA !important;
 }
 
 .nav-link:hover {
@@ -37,6 +37,12 @@ h6 {
 
 .jumbotron {
   margin-bottom: 0px;
+  background-color: #AFCAC4;
+}
+
+.navbar {
+  background-color: #365B36;
+  min-height: 60px;
 }
 
 .container {
@@ -50,12 +56,12 @@ nav {
 
 .col-9 {
   padding-top: 20px;
-  background-color: turquoise;
+  background-color: #F89B36;
 }
 
 .col-3 {
   padding-top: 20px;
-  background-color: blueviolet;
+  background-color: #FB4539;
 }
 
 #main-row {
@@ -85,7 +91,7 @@ html, body {
 	/* Must match margin-bottom in .wrapper CSS */
 	/* Set the fixed height of the footer here */
   height: 40px;
-  background-color: orchid;
+  background-color: #8D295B;
 	overflow: auto;
 	margin-top: 0px;
   margin-bottom: 0px;
