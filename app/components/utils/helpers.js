@@ -7,9 +7,10 @@ var helper = {
         return axios.get("/list");
     },
 
-    saveQuery : function () {
-
-        return axios.post("/save");
+    saveQuery : function (inputData) {
+        console.log("HELP3");
+        console.log(inputData)
+        return axios.post("/save", inputData);
     }
 }
 
