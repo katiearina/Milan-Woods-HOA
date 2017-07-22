@@ -92,6 +92,7 @@ html, body {
 	/* Set the fixed height of the footer here */
   height: 40px;
   background-color: #8D295B;
+  color: black;
 	overflow: auto;
 	margin-top: 0px;
   margin-bottom: 0px;
