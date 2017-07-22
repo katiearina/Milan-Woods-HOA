@@ -4,12 +4,33 @@ var helpers = require("../utils/helpers");
 
 var PetDirectoryForm = React.createClass({
 
-    handleSubmit: function(event) {
-    // prevent the HTML from trying to submit a form if the user hits "Enter" instead of
-    // clicking the button
+  getInitialState: function() {
+    return {
+      petname: "",
+      ownername: "",
+      address: "",
+      tel: ""
+    };
+  },
+
+  handleInputChange: function(event) {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+    // console.log(target);
+    // console.log(value);
+    // console.log(name);
+
+    this.setState({
+      [name]: value
+    });
+  },
+
+  handleSubmit: function(event) {
+
     event.preventDefault();
-      console.log("HELP");
-    helpers.listQuery().then(function(response) {
+    console.log("HELP");
+    helpers.saveQuery(this.state).then(function(response) {
 
     console.log(response);
    }.bind(this));
@@ -24,26 +45,26 @@ var PetDirectoryForm = React.createClass({
        Pet Name
        <span className="asteriskField">*</span>
       </label>
-      <input className="form-control" id="petname" name="petname" type="text"/>
+      <input className="form-control" id="petname" name="petname" type="text" onChange={this.handleInputChange}/>
      </div>
      <div className="form-group ">
       <label className="control-label requiredField" for="ownername">
        Owner Name
        <span className="asteriskField">*</span>
       </label>
-      <input className="form-control" id="ownername" name="ownername" type="text"/>
+      <input className="form-control" id="ownername" name="ownername" type="text" onChange={this.handleInputChange}/>
      </div>
      <div className="form-group ">
       <label className="control-label " for="address">
        Address
       </label>
-      <input className="form-control" id="address" name="address" type="text"/>
+      <input className="form-control" id="address" name="address" type="text" onChange={this.handleInputChange}/>
      </div>
      <div className="form-group ">
       <label className="control-label " for="tel">
        Telephone #
       </label>
-      <input className="form-control" id="tel" name="tel" type="text"/>
+      <input className="form-control" id="tel" name="tel" type="text" onChange={this.handleInputChange}/>
      </div>
      <div className="form-group">
       <div>
