@@ -1,3 +1,40 @@
+html, body {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.nav-link, .nav-link:visited, .nav-link:active {
+  text-decoration: none;
+  color: black !important;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: red !important;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+#pageHeader {
+  /* Add header font here */
+}
+
+h6 {
+  font-family: 'Cinzel', serif;
+}
+
 .jumbotron {
   margin-bottom: 0px;
 }
@@ -23,14 +60,6 @@ nav {
 
 #main-row {
   min-height: 80vh;
-}
-
-#pageHeader {
-  font-family: 'Stint Ultra Expanded', cursive; 
-}
-
-h5 {
-  font-family: 'Sacramento', cursive;
 }
 
 /* For pet directory images */
