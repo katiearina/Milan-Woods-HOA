@@ -1,7 +1,6 @@
 html, body {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
-  background-image: url("../images/header-trees-small.jpg");
 }
 
 a:link, a:visited {
@@ -49,8 +48,8 @@ h6 {
 
 .jumbotron {
   margin-bottom: 0px;
-  /* background-color: #26A96C; */
-  /* background-image: url("https://user-images.githubusercontent.com/22947371/28494517-1382df88-6eff-11e7-9d30-3bf25de1946e.jpg"); */
+  background-color: #26A96C; 
+  background-image: url("../images/header-trees-small.jpg");
 }
 
 .navbar {
@@ -69,12 +68,12 @@ nav {
 
 .col-9 {
   padding-top: 20px;
-  /* background-color: #2BC016; */
+  background-color: #2BC016;
 }
 
 .col-3 {
   padding-top: 20px;
-  /* background-color: #387D7A; */
+  background-color: #387D7A;
 }
 
 #main-row {
