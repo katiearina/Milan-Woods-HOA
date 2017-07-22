@@ -3,7 +3,7 @@ html, body {
   font-weight: 400;
 }
 
-a, a:visited, a:active {
+a:link, a:visited {
   text-decoration: none;
   color: black;
 }
@@ -12,6 +12,12 @@ a:hover {
   text-decoration: none;
   color: red;
 }
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
 
 .nav-link, .nav-link:visited, .nav-link:active {
   text-decoration: none;
@@ -28,7 +34,12 @@ h1 {
 }
 
 #pageHeader {
-  /* Add header font here */
+  font-family: 'Judson', serif;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
 }
 
 h6 {
