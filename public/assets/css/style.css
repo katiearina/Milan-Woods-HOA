@@ -1,5 +1,48 @@
+html, body {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.nav-link, .nav-link:visited, .nav-link:active {
+  text-decoration: none;
+  color: #E4E7EA !important;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: red !important;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+#pageHeader {
+  /* Add header font here */
+}
+
+h6 {
+  font-family: 'Cinzel', serif;
+}
+
 .jumbotron {
   margin-bottom: 0px;
+  background-color: #AFCAC4;
+}
+
+.navbar {
+  background-color: #365B36;
+  min-height: 60px;
 }
 
 .container {
@@ -13,33 +56,16 @@ nav {
 
 .col-9 {
   padding-top: 20px;
-  background-color: turquoise;
+  background-color: #F89B36;
 }
 
 .col-3 {
   padding-top: 20px;
-  background-color: blueviolet;
+  background-color: #FB4539;
 }
 
 #main-row {
   min-height: 80vh;
-}
-
-#pageHeader {
-  font-family: 'Stint Ultra Expanded', cursive; 
-}
-
-h5 {
-  font-family: 'Sacramento', cursive;
-}
-
-/* For pet directory images */
-.card-img-left {
-  border-bottom-left-radius: calc(.25rem - 1px);
-  border-top-left-radius: calc(.25rem - 1px);
-  float: left;
-  padding-right: 1em;
-  margin-bottom: -1.25em;
 }
 
 /* Leave footer CSS at the bottom */
@@ -65,7 +91,8 @@ html, body {
 	/* Must match margin-bottom in .wrapper CSS */
 	/* Set the fixed height of the footer here */
   height: 40px;
-  background-color: orchid;
+  background-color: #8D295B;
+  color: black;
 	overflow: auto;
 	margin-top: 0px;
   margin-bottom: 0px;
