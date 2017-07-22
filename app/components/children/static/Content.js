@@ -1,16 +1,12 @@
 var React = require("react");
+var PetDirectoryForm = require("../Pet-Directory-Form");
+var PetDirectory = require("../Pet-Directory");
 
 var Content = React.createClass({
   render: function() {
     return (
-      // Not sure where this row needs to go?
-      <div class="row" id="main-row">
-      
-        <div class="col-9"> 
-          <div class="main container"> 
-              <h1>Test</h1> 
-          </div> 
-        </div>
+      <div>
+        <h1>Home</h1>
       </div>
     );
   }
