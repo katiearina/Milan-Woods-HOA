@@ -18,7 +18,7 @@ var PetSchema = new Schema ({
     },
     // contact number for Pet
     petPhone: {
-        type: Number
+        type: String
     },
     // URL to S3 Image
     petImage: {

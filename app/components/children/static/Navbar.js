@@ -10,12 +10,16 @@ var Navbar = React.createClass({
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <a className="navbar-brand" href="#">Home</a>
+        <a className="navbar-item" href="#"></a>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
 
           <ul className="navbar-nav">
 
-            <li className="nav-item active">
+            <li className="nav-item">
+              <Link to="/Home" className="nav-link">Home<span className="sr-only">(current)</span></Link>
+            </li>
+
+            <li className="nav-item">
               <Link to="/ArcApp" className="nav-link">ARC Application<span className="sr-only">(current)</span></Link>
             </li>
 
