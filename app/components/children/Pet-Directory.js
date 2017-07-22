@@ -1,31 +1,64 @@
 var React = require("react");
-
 var helpers = require("../utils/helpers");
 
 var PetDirectory = React.createClass({
 
-  render: function() {
-    return (
-        <div className="panel panel-default">
-            <div className="panel-heading">
-                <h3 className="panel-title text-center">Pet Directory</h3>
-            </div>
-            <div className="panel-body text-center">
-                <div className="row">
-                    <div className="col-8">
-                        <h3>Pet Name</h3>
-                        <h3>Pet Owner</h3>
-                        <h3>Pet Telephone</h3>
-                    </div>
-                    <div className="col-4">
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"/></a>
-                    </div>
+    getInitialState: function(){
+        return { petList: ""};
+    },
+
+    componentDidMount: function() {
+        helpers.listQuery().then(function(response){
+            console.log(response.data);
+            this.setState({petList: response.data})
+        }.bind(this));
+    },
+
+    renderEmpty: function() {
+        return (
+
+                <div className="card-block">
+                    <blockquote className="card-blockquote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote>
                 </div>
 
+        );
+
+    },
+
+    renderPets: function() {
+        return this.state.petList.map(function(pets, index){
+
+            return (
+                <div className="card-block {index}">
+                    <blockquote className="card-blockquote">
+                    <p>Pet Name   : {pets.petName} </p>
+                    <p>Owner Name : {pets.petOwner}</p>
+                    <p>Phone #    : {pets.petPhone}</p>
+                    </blockquote>
+                </div>
+            );
+        });
+
+    },
+
+    renderContainer: function(){
+        return (
+            <div className="card-deck">
+                {this.renderPets()}
             </div>
-        </div>
-    );
+        )
+    },
+
+  render: function() {
+    if (!this.state.petList) {
+        return this.renderEmpty();
+    }
+
+    return this.renderContainer();
   }
+
 });
 
 module.exports = PetDirectory;
