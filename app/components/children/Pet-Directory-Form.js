@@ -17,21 +17,14 @@ var PetDirectoryForm = React.createClass({
     const target = event.target;
     const value = target.value;
     const name = target.name;
-    // console.log(target);
-    // console.log(value);
-    // console.log(name);
-
     this.setState({
       [name]: value
     });
   },
 
   handleSubmit: function(event) {
-
     event.preventDefault();
-    console.log("HELP");
     helpers.saveQuery(this.state).then(function(response) {
-
     console.log(response);
    }.bind(this));
   },

@@ -16,31 +16,30 @@ var PetDirectory = React.createClass({
 
     renderEmpty: function() {
         return (
-
                 <div className="card-block">
                     <blockquote className="card-blockquote">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <p>No pets currently present in Pet Directory.</p>
                     </blockquote>
                 </div>
-
         );
-
     },
 
     renderPets: function() {
         return this.state.petList.map(function(pets, index){
-
             return (
-                <div className="card-block {index}">
-                    <blockquote className="card-blockquote">
-                    <p>Pet Name   : {pets.petName} </p>
-                    <p>Owner Name : {pets.petOwner}</p>
-                    <p>Phone #    : {pets.petPhone}</p>
-                    </blockquote>
+                <div key={index}>
+
+                    <div className="card-block">
+                        <img className="card-img-top" src="http://via.placeholder.com/250x250" alt="Card image cap"/>
+                        <blockquote className="card-blockquote">
+                        <p>Pet Name   : {pets.petName} </p>
+                        <p>Owner Name : {pets.petOwner}</p>
+                        <p>Phone #    : {pets.petPhone}</p>
+                        </blockquote>
+                    </div>
                 </div>
             );
         });
-
     },
 
     renderContainer: function(){
