@@ -33,6 +33,15 @@ h5 {
   font-family: 'Sacramento', cursive;
 }
 
+/* For pet directory images */
+.card-img-left {
+  border-bottom-left-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(.25rem - 1px);
+  float: left;
+  padding-right: 1em;
+  margin-bottom: -1.25em;
+}
+
 /* Leave footer CSS at the bottom */
 /*----------------------------------------------*/
 /* Sticky footer positioning and to get rid of weird L-R scroll bar */
