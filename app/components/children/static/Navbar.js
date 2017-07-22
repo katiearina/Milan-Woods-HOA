@@ -16,30 +16,29 @@ var Navbar = React.createClass({
           <ul className="navbar-nav">
 
             <li className="nav-item active">
-              <Link to="/ArcApp"><a className="nav-link">ARC Application<span className="sr-only">(current)</span></a></Link>
+              <Link to="/ArcApp" className="nav-link">ARC Application<span className="sr-only">(current)</span></Link>
             </li>
 
             <li className="nav-item">
-              <Link to="/BoardMembers"><a className="nav-link">Current Board Members</a></Link>
+              <Link to="/BoardMembers" className="nav-link">Current Board Members</Link>
             </li>
 
             <li className="nav-item">
-              <Link to="/Collection"><a className="nav-link">Collection Schedule</a></Link>
+              <Link to="/Collection" className="nav-link">Collection Schedule</Link>
             </li>
 
             <li className="nav-item">
-              <Link to="/GoverningDocs"><a className="nav-link">Governing Documents</a></Link>
+              <Link to="/GoverningDocs" className="nav-link">Governing Documents</Link>
             </li>
 
             <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Pet Directory
                 </a>
 
               <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <Link to="/PetDirectory"><a className="dropdown-item">View Directory</a></Link>
-                <Link to="/PetForm"><a className="dropdown-item">Add Pet to Directory</a></Link>
-                {/* <a className="dropdown-item" href="#">Something else here</a> */}
+                <Link to="/PetDirectory" className="dropdown-item">View Directory</Link>
+                <Link to="/PetForm" className="dropdown-item">Add Pet to Directory</Link>
               </div>
             </li>
 
