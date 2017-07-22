@@ -26,5 +26,15 @@ exports.save = function(req, res) {
 exports.list = function(req, res) {
     // res.send("IN LIST")
     console.log("In List")
+    Pets.find({})
+    .exec(function(err, doc) {
+
+      if (err) {
+        console.log(err);
+      }
+      else {
+        res.send(doc);
+      }
+    });
 };
 
