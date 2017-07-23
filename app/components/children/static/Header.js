@@ -6,7 +6,7 @@ var Header = React.createClass({
       <div className="jumbotron jumbotron-fluid">
         <div className="container">
           <a href="/"><h1 id="pageHeader">Milan Woods Neighborhood</h1></a>
-          <h6>Established 1987</h6>
+          <h5>Durham, NC &ndash; Established 1987</h5>
         </div>
       </div>
     );

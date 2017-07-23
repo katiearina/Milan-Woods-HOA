@@ -10,14 +10,13 @@ a:link, a:visited {
 
 a:hover {
   text-decoration: none;
-  color: #E4572E;
+  color: #98007B;
 }
 
 a:active {
   text-decoration: none;
   color: black;
 }
-
 
 .nav-link, .nav-link:visited, .nav-link:active {
   text-decoration: none;
@@ -39,6 +38,13 @@ h1 {
   font-family: 'Yatra One', cursive;
   font-size: 64px;
   color: #F3FFF2;
+   text-shadow:
+    1px 2px 2px #133629,
+    -1px -1px 0 #395E66,  
+    1px -1px 0 #395E66,
+    -1px 1px 0 #395E66,
+     1px 1px 0 #395E66;  
+    /* text-shadow: 1px 3px 3px #133629;   */
   /* font-family: 'Judson', serif; */
 }
 
@@ -47,14 +53,22 @@ p {
   font-size: 14px;
 }
 
-h6 {
-  font-family: 'Cinzel', serif;
-}
-
 .jumbotron {
   margin-bottom: 0px;
   background-color: #26A96C; 
   background-image: url("../images/header-trees-small.jpg");
+}
+
+.jumbotron h5 {
+  text-align: right;
+  padding-right: 20vw;
+  font-family: 'Enriqueta', serif;
+  color: #F3FFF2;
+   text-shadow:
+   -1px -1px 0 #395E66,  
+    1px -1px 0 #395E66,
+    -1px 1px 0 #395E66,
+     1px 1px 0 #395E66; 
 }
 
 .navbar {
