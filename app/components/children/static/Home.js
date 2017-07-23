@@ -7,6 +7,8 @@ var Home = React.createClass({
     return (
       <div>
         <h1>Home</h1>
+          <iframe id="google-map" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-spK8c4Z45hLR1FacjqWC-bbCNUX_8Xw&q=Milan+Woods,Durham+NC">
+          </iframe>
       </div>
     );
   }

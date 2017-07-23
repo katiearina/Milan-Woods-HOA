@@ -24,8 +24,8 @@ var Main = React.createClass({
                 <div className="row" id="main-row">
 
                   {/*<Main Content />*/}
-                  <div className="col-9"> 
-                    <div className="main container">
+                  <div className="col-9 content"> 
+                    <div className="main container" id="main-content">
                         {this.props.children}
                     </div> 
                   </div>
