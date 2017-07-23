@@ -101,7 +101,7 @@ nav {
 }
 
 #sidebar-content {
-  background-color: white;
+  background-color: #F3FFF2;
   margin-right: 10px;
   text-align: center;
   padding: 5px;
@@ -109,6 +109,11 @@ nav {
 
 #main-row {
   min-height: 80vh;
+}
+
+#google-map {
+  min-width: 300px;
+  min-height: 225px;
 }
 
 /* Leave footer CSS at the bottom */
