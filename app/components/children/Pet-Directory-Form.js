@@ -23,6 +23,20 @@ var PetDirectoryForm = React.createClass({
     };
   },
 
+  resetInitialState: function() {
+    this.setState({
+      petname: "",
+      ownername: "",
+      address: "",
+      tel: "",
+      imageUrl: "",
+      details: "",
+      uploading: false,
+      uploadedPercent: 0,
+      image : "http://via.placeholder.com/150x150"
+    });
+  },
+
   uploadFile: function(file,signed_request,response_url){
     this.setState({ uploading : true });
     var xhr = new XMLHttpRequest();
@@ -40,6 +54,7 @@ var PetDirectoryForm = React.createClass({
       if (xhr.status === 200) {
         console.log("file uploaded succesfully");
         console.log(response_url);
+        this.setState({ fireRedirect: true })
       }
     }.bind(this);
     xhr.onerror = function() {
@@ -77,7 +92,7 @@ var PetDirectoryForm = React.createClass({
 
   fileOnChange: function(e){
     e.preventDefault();
-
+    // render preview image
     let reader = new FileReader();
     let file = e.target.files[0];
 
@@ -128,7 +143,8 @@ var PetDirectoryForm = React.createClass({
     };
 
     helpers.saveQuery(payload).then(function(response) {
-    console.log(response);
+    // console.log(response);
+    this.setState(this.resetInitialState);
    }.bind(this));
 
   },
@@ -185,6 +201,9 @@ var PetDirectoryForm = React.createClass({
        </button>
       </div>
      </div>
+      {this.fireRedirect && (
+        <Redirect to={from || '/PetDirectory'}/>
+      )}
     </form>
 
     );
