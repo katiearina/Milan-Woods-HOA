@@ -35,7 +35,11 @@ h1 {
 }
 
 #pageHeader {
-  font-family: 'Judson', serif;
+  text-align: center;
+  font-family: 'Yatra One', cursive;
+  font-size: 64px;
+  color: #F3FFF2;
+  /* font-family: 'Judson', serif; */
 }
 
 p {
@@ -54,7 +58,7 @@ h6 {
 }
 
 .navbar {
-  background-color: #EBF9E9;
+  background-color: #F3FFF2;
   color: #2E8665;
   text-transform: uppercase;
   min-height: 60px;

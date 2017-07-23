@@ -5,7 +5,7 @@ var Header = React.createClass({
     return (
       <div className="jumbotron jumbotron-fluid">
         <div className="container">
-          <a href="/"><h1 id="pageHeader">Milan Woods Community</h1></a>
+          <a href="/"><h1 id="pageHeader">Milan Woods Neighborhood</h1></a>
           <h6>Established 1987</h6>
         </div>
       </div>
