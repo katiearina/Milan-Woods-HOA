@@ -94,17 +94,23 @@ nav {
   /* background-color: #2BC016; */
 }
 
-.sidebar {
-  padding-top: 10px;
-  border-left: 1px #395E66 solid; 
+.sidebar, .content {
+  padding: 0px; 
   background-color: #387D7A;  
 }
 
-#sidebar-content {
+#sidebar-content, #main-content {
+  border: 1px #395E66 solid;  
   background-color: #F3FFF2;
-  margin-right: 10px;
+  margin: 10px; 
   text-align: center;
-  padding: 5px;
+  padding: 10px; 
+  height: 95%;
+  width: auto;
+}
+
+#sidebar-content {
+  margin-left: 0px; 
 }
 
 #main-row {
@@ -114,6 +120,11 @@ nav {
 #google-map {
   min-width: 300px;
   min-height: 225px;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }
 
 /* Leave footer CSS at the bottom */
