@@ -11,4 +11,7 @@ app.get('/list', pet_controller.list);
 // call route to post new pet data
 app.post('/save', pet_controller.save);
 
+// call route to get S3 signature
+app.post('/image', pet_controller.image);
+
 };
