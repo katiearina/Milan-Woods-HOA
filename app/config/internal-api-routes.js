@@ -11,13 +11,14 @@ dotenv.load();
 exports.save = function(req, res) {
     // res.send("In SAVE");
     console.log("In SAVE")
-    // console.log(req)
+    console.log(req)
     Pets.create({
-        petName : req.body.petname,
-        petOwner : req.body.ownername,
-        petAddress: req.body.address,
-        petPhone : req.body.tel
-
+        petName : req.body.petName,
+        petOwner : req.body.petOwner,
+        petAddress: req.body.petAddress,
+        petPhone : req.body.petPhone,
+        petImage : req.body.petImage,
+        petDescription : req.body.petDescription
     }, function(err) {
         if (err) {
             console.log(err);

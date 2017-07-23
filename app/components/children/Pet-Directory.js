@@ -30,7 +30,7 @@ var PetDirectory = React.createClass({
                 <div key={index}>
 
                     <div className="card-block">
-                        <img className="card-img-top" src="http://via.placeholder.com/250x250" alt="Card image cap"/>
+                        <img className="card-img-top" height={150} width={150} src={pets.petImage} alt="http://via.placeholder.com/250x250"/>
                         <blockquote className="card-blockquote">
                         <p>Pet Name   : {pets.petName} </p>
                         <p>Owner Name : {pets.petOwner}</p>

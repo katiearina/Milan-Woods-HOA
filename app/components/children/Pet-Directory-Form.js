@@ -2,6 +2,8 @@
 // http://blog.pragmasoft.com.tr/how-to-upload-image-binary-etc-data-directly-to-amazon-s3/
 
 var React = require("react");
+var Route = require("react-router").Route;
+var Redirect = require("react-router").Redirect;
 var $ = require("jquery");
 var helpers = require("../utils/helpers");
 
@@ -14,6 +16,7 @@ var PetDirectoryForm = React.createClass({
       address: "",
       tel: "",
       imageUrl: "",
+      details: "",
       uploading: false,
       uploadedPercent: 0,
       image : "http://via.placeholder.com/150x150"
@@ -37,7 +40,6 @@ var PetDirectoryForm = React.createClass({
       if (xhr.status === 200) {
         console.log("file uploaded succesfully");
         console.log(response_url);
-        // this.setState({  imageUrl : response_url, uploading : false });
       }
     }.bind(this);
     xhr.onerror = function() {
@@ -116,9 +118,19 @@ var PetDirectoryForm = React.createClass({
 
   handleSubmit: function(event) {
     event.preventDefault();
-    helpers.saveQuery(this.state).then(function(response) {
+    var payload  = {
+      petName : this.state.petname,
+      petOwner : this.state.ownername,
+      petAddress: this.state.address,
+      petPhone : this.state.tel,
+      petImage : this.state.imageUrl,
+      petDescription : this.state.details
+    };
+
+    helpers.saveQuery(payload).then(function(response) {
     console.log(response);
    }.bind(this));
+
   },
 
   render: function() {
@@ -151,14 +163,21 @@ var PetDirectoryForm = React.createClass({
       </label>
       <input className="form-control" id="tel" name="tel" type="text" onChange={this.handleInputChange}/>
      </div>
+     <div className="form-group ">
+      <label className="control-label " for="tel">
+       Description
+      </label>
+      <input className="form-control" id="details" name="details" type="textarea" rows={5} onChange={this.handleInputChange}/>
+     </div>
       <div className="form-group ">
       <label className="control-label col-3" for="upl">
        Pet Photo
       </label>
       {/* <input className="form-control" id="upl" name="upl" type="file" onChange={this.handleInputChange}/> */}
       <img style={{ border : '1px solid black' }} height={150} width={150} src={this.state.image} alt="Upload Pet Image"/>
-      <input className="form-control" type="file" onChange={this.fileOnChange} style={{display:'none'}}/>
+      <input className="form-control" type="file" onChange={this.fileOnChange}/>
      </div>
+
      <div className="form-group">
       <div>
        <button className="btn btn-primary " name="submit" type="submit">
