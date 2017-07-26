@@ -122,6 +122,12 @@ nav {
   min-height: 225px;
 }
 
+#google-calendar {
+  width: 85%;
+  min-height: 300px;
+  border: 1px solid black;
+}
+
 .row {
     margin-right: 0px !important;
     margin-left: 0px !important;
