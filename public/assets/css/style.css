@@ -37,7 +37,7 @@ h1 {
   text-align: center;
   font-family: 'Yatra One', cursive;
   font-size: 64px;
-  color: #F3FFF2;
+  color: #EDF2F1;
    text-shadow:
     1px 2px 2px #133629,
     -1px -1px 0 #395E66,  
@@ -63,7 +63,7 @@ p {
   text-align: right;
   padding-right: 20vw;
   font-family: 'Enriqueta', serif;
-  color: #F3FFF2;
+  color: #EDF2F1;
    text-shadow:
    -1px -1px 0 #395E66,  
     1px -1px 0 #395E66,
@@ -72,8 +72,8 @@ p {
 }
 
 .navbar {
-  background-color: #F3FFF2;
-  color: #2E8665;
+  background-color: #FFFFFF;
+  color: #FFFFFF;
   text-transform: uppercase;
   min-height: 60px;
   border-top: 2px #26A96C solid;
@@ -101,7 +101,7 @@ nav {
 
 #sidebar-content, #main-content {
   border: 1px #395E66 solid;  
-  background-color: #F3FFF2;
+  background-color: #FFFFFF;;
   margin: 10px; 
   text-align: center;
   padding: 10px; 
