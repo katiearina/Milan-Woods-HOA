@@ -1,4 +1,5 @@
 var React = require("react");
+var Weather = require("../Weather");
 
 var Sidebar = React.createClass({
   render: function() {
@@ -9,8 +10,11 @@ var Sidebar = React.createClass({
           <hr />
           <a href="https://nextdoor.com/neighborhood/milanwoods--durham--nc/" target="_blank">Join Nextdoor</a>
           <hr />
+
+            <Weather />
+
         </div>
-      </div> 
+      </div>
     );
   }
 });
