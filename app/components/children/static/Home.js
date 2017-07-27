@@ -1,6 +1,10 @@
 var React = require("react");
-var PetDirectoryForm = require("../Pet-Directory-Form");
-var PetDirectory = require("../Pet-Directory");
+
+// var Auth = require("../Auth");
+
+// const auth = new Auth();
+// auth.login();
+
 
 var Home = React.createClass({
   render: function() {
