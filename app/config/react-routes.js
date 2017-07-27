@@ -13,7 +13,8 @@ var Router = router.Router;
 
 // Include the hashHistory prop to handle routing client side without a server
 // https://github.com/ReactTraining/react-router/blob/master/docs/guides/Histories.md#hashhistory
-var hashHistory = router.hashHistory;
+// var hashHistory = router.hashHistory;
+var hashHistory = router.browserHistory;
 
 // Include the IndexRoute (catch-all route)
 var IndexRoute = router.IndexRoute;
@@ -27,6 +28,7 @@ var CollectionSchedule = require("../components/children/Collection-Schedule");
 var GoverningDocs = require("../components/children/Governing-Docs");
 var PetDirectoryForm = require("../components/children/Pet-Directory-Form");
 var PetDirectory = require("../components/children/Pet-Directory");
+var AuthTest = require("../components/children/static/AuthTest");
 
 // Export the Routes
 module.exports = (
@@ -42,6 +44,7 @@ module.exports = (
       <Route path="GoverningDocs" component={GoverningDocs} />
       <Route path="PetForm" component={PetDirectoryForm} />
       <Route path="PetDirectory" component={PetDirectory} />
+      <Route path="AuthTest" component={AuthTest} />
 
       {/* Default path */}
       <IndexRoute component={Home} />
