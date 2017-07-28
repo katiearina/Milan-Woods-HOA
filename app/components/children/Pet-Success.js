@@ -19,7 +19,7 @@ render: function(){
       <div className="modal-footer">
         <Link to="/PetForm"><button type="button" className="btn btn-primary">Add New Pet</button></Link>
          <Link to="/PetDirectory"><button type="button" className="btn btn-primary" data-dismiss="modal">View Pet Directory</button></Link>
-         <Link to="/Home" ><button type="button" className="btn btn-primary" data-dismiss="modal">Home</button></Link>
+         <Link to="/" ><button type="button" className="btn btn-primary" data-dismiss="modal">Home</button></Link>
       </div>
     </div>
   </div>

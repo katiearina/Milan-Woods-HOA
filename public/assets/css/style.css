@@ -38,24 +38,11 @@ h1 {
 }
 
 #pageHeader {
-<<<<<<< HEAD
     text-align: center;
     font-family: 'Yatra One', cursive;
     font-size: 64px;
-    color: #F3FFF2;
+    color: #EDF2F1;
     text-shadow: 1px 2px 2px #133629, -1px -1px 0 #395E66, 1px -1px 0 #395E66, -1px 1px 0 #395E66, 1px 1px 0 #395E66;
-=======
-  text-align: center;
-  font-family: 'Yatra One', cursive;
-  font-size: 64px;
-  color: #EDF2F1;
-   text-shadow:
-    1px 2px 2px #133629,
-    -1px -1px 0 #395E66,  
-    1px -1px 0 #395E66,
-    -1px 1px 0 #395E66,
-     1px 1px 0 #395E66;  
->>>>>>> b98a5382fcb191f1c10cf1e00d9ebde8af75e4c6
     /* text-shadow: 1px 3px 3px #133629;   */
     /* font-family: 'Judson', serif; */
 }
@@ -72,41 +59,20 @@ p {
 }
 
 .jumbotron h5 {
-<<<<<<< HEAD
     text-align: right;
     padding-right: 20vw;
     font-family: 'Enriqueta', serif;
-    color: #F3FFF2;
+    color: #EDF2F1;
     text-shadow: -1px -1px 0 #395E66, 1px -1px 0 #395E66, -1px 1px 0 #395E66, 1px 1px 0 #395E66;
 }
 
 .navbar {
-    background-color: #F3FFF2;
-    color: #2E8665;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
     text-transform: uppercase;
     min-height: 60px;
     border-top: 2px #26A96C solid;
     border-bottom: 2px #26A96C solid;
-=======
-  text-align: right;
-  padding-right: 20vw;
-  font-family: 'Enriqueta', serif;
-  color: #EDF2F1;
-   text-shadow:
-   -1px -1px 0 #395E66,  
-    1px -1px 0 #395E66,
-    -1px 1px 0 #395E66,
-     1px 1px 0 #395E66; 
-}
-
-.navbar {
-  background-color: #FFFFFF;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  min-height: 60px;
-  border-top: 2px #26A96C solid;
-  border-bottom: 2px #26A96C solid;
->>>>>>> b98a5382fcb191f1c10cf1e00d9ebde8af75e4c6
 }
 
 .container {
@@ -129,26 +95,16 @@ nav {
     background-color: #387D7A;
 }
 
-<<<<<<< HEAD
 #sidebar-content,
 #main-content {
     border: 1px #395E66 solid;
-    background-color: #F3FFF2;
+    background-color: #FFFFFF;
+    ;
     margin: 10px;
     text-align: center;
     padding: 10px;
     height: 95%;
     width: auto;
-=======
-#sidebar-content, #main-content {
-  border: 1px #395E66 solid;  
-  background-color: #FFFFFF;;
-  margin: 10px; 
-  text-align: center;
-  padding: 10px; 
-  height: 95%;
-  width: auto;
->>>>>>> b98a5382fcb191f1c10cf1e00d9ebde8af75e4c6
 }
 
 #sidebar-content {
@@ -159,15 +115,22 @@ nav {
     min-height: 80vh;
 }
 
+.modal {
+    top: 50%;
+    right: 20%;
+    display: inline;
+    opacity: 1;
+}
+
 #google-map {
     min-width: 300px;
     min-height: 225px;
 }
 
 #google-calendar {
-  width: 85%;
-  min-height: 300px;
-  border: 1px solid black;
+    width: 85%;
+    min-height: 300px;
+    border: 1px solid black;
 }
 
 .row {
@@ -223,11 +186,4 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
     margin-bottom: 0;
-}
-
-#modal {
-    top: 50%;
-    right: 20%;
-    display: inline;
-    opacity: 1;
 }
