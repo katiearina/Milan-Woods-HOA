@@ -1,131 +1,136 @@
-html, body {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 400;
+html,
+body {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
 }
 
-a:link, a:visited {
-  text-decoration: none;
-  color: black;
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
 }
 
 a:hover {
-  text-decoration: none;
-  color: #98007B;
+    text-decoration: none;
+    color: #98007B;
 }
 
 a:active {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
-.nav-link, .nav-link:visited, .nav-link:active {
-  text-decoration: none;
-  font-weight: 600;
-  color: #2E8665 !important;
+.nav-link,
+.nav-link:visited,
+.nav-link:active {
+    text-decoration: none;
+    font-weight: 600;
+    color: #2E8665 !important;
 }
 
 .nav-link:hover {
-  text-decoration: none;
-  color: #2BC016 !important;
+    text-decoration: none;
+    color: #2BC016 !important;
 }
 
 h1 {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 #pageHeader {
-  text-align: center;
-  font-family: 'Yatra One', cursive;
-  font-size: 64px;
-  color: #EDF2F1;
-   text-shadow:
-    1px 2px 2px #133629,
-    -1px -1px 0 #395E66,  
-    1px -1px 0 #395E66,
-    -1px 1px 0 #395E66,
-     1px 1px 0 #395E66;  
+    text-align: center;
+    font-family: 'Yatra One', cursive;
+    font-size: 64px;
+    color: #EDF2F1;
+    text-shadow: 1px 2px 2px #133629, -1px -1px 0 #395E66, 1px -1px 0 #395E66, -1px 1px 0 #395E66, 1px 1px 0 #395E66;
     /* text-shadow: 1px 3px 3px #133629;   */
-  /* font-family: 'Judson', serif; */
+    /* font-family: 'Judson', serif; */
 }
 
 p {
-  font-family: 'Nunito', sans-serif;
-  font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
 }
 
 .jumbotron {
-  margin-bottom: 0px;
-  background-color: #26A96C; 
-  background-image: url("../images/header-trees-small.jpg");
+    margin-bottom: 0px;
+    background-color: #26A96C;
+    background-image: url("../images/header-trees-small.jpg");
 }
 
 .jumbotron h5 {
-  text-align: right;
-  padding-right: 20vw;
-  font-family: 'Enriqueta', serif;
-  color: #EDF2F1;
-   text-shadow:
-   -1px -1px 0 #395E66,  
-    1px -1px 0 #395E66,
-    -1px 1px 0 #395E66,
-     1px 1px 0 #395E66; 
+    text-align: right;
+    padding-right: 20vw;
+    font-family: 'Enriqueta', serif;
+    color: #EDF2F1;
+    text-shadow: -1px -1px 0 #395E66, 1px -1px 0 #395E66, -1px 1px 0 #395E66, 1px 1px 0 #395E66;
 }
 
 .navbar {
-  background-color: #FFFFFF;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  min-height: 60px;
-  border-top: 2px #26A96C solid;
-  border-bottom: 2px #26A96C solid;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    min-height: 60px;
+    border-top: 2px #26A96C solid;
+    border-bottom: 2px #26A96C solid;
 }
 
 .container {
-  width: 100vw; 
+    width: 100vw;
 }
 
 nav {
-  margin-top: 0px;
-  width: 100%;
+    margin-top: 0px;
+    width: 100%;
 }
 
 .main {
-  padding-top: 20px;
-  /* background-color: #2BC016; */
+    padding-top: 20px;
+    /* background-color: #2BC016; */
 }
 
-.sidebar, .content {
-  padding: 0px; 
-  background-color: #387D7A;  
+.sidebar,
+.content {
+    padding: 0px;
+    background-color: #387D7A;
 }
 
-#sidebar-content, #main-content {
-  border: 1px #395E66 solid;  
-  background-color: #FFFFFF;;
-  margin: 10px; 
-  text-align: center;
-  padding: 10px; 
-  height: 95%;
-  width: auto;
+#sidebar-content,
+#main-content {
+    border: 1px #395E66 solid;
+    background-color: #FFFFFF;
+    ;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    height: 95%;
+    width: auto;
 }
 
 #sidebar-content {
-  margin-left: 0px; 
+    margin-left: 0px;
 }
 
 #main-row {
-  min-height: 80vh;
+    min-height: 80vh;
+}
+
+.modal {
+    top: 50%;
+    right: 20%;
+    display: inline;
+    opacity: 1;
 }
 
 #google-map {
-  min-width: 300px;
-  min-height: 225px;
+    min-width: 300px;
+    min-height: 225px;
 }
 
 #google-calendar {
-  width: 85%;
-  min-height: 300px;
-  border: 1px solid black;
+    width: 85%;
+    min-height: 300px;
+    border: 1px solid black;
 }
 
 .row {
@@ -133,41 +138,52 @@ nav {
     margin-left: 0px !important;
 }
 
+
 /* Leave footer CSS at the bottom */
+
+
 /*----------------------------------------------*/
+
+
 /* Sticky footer positioning and to get rid of weird L-R scroll bar */
-html, body {
-	height: 100%;
-	overflow-x: hidden;
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
 }
 
+
 /* Wrapper for page content to push down footer */
-  #wrap {
-	min-height: 100vh;
-	height: auto;
-	/* Negative indent footer by its height */
-	/* margin: 0px auto -40px; */
-	/* Pad bottom by footer height */
-	padding: 0px 0px;   
-}  
+
+#wrap {
+    min-height: 100vh;
+    height: auto;
+    /* Negative indent footer by its height */
+    /* margin: 0px auto -40px; */
+    /* Pad bottom by footer height */
+    padding: 0px 0px;
+}
+
 
 /* Sticky footer styling! */
+
 #footer {
-	/* Must match margin-bottom in .wrapper CSS */
-	/* Set the fixed height of the footer here */
-  height: 40px;
-  background-color: #395E66;
-  color: black;
-	overflow: auto;
-	margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 5px;
-  border-top: 1px solid black;
-  text-align: center;
+    /* Must match margin-bottom in .wrapper CSS */
+    /* Set the fixed height of the footer here */
+    height: 40px;
+    background-color: #395E66;
+    color: black;
+    overflow: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
+    border-top: 1px solid black;
+    text-align: center;
 }
 
 #footer p {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 400;
-  margin-bottom: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    margin-bottom: 0;
 }

@@ -3,8 +3,6 @@ var generalResponse = require('../../routes/utils/general_response');
 var AWS = require('aws-sdk');
 var dotenv = require("dotenv");
 var uuid = require("uuid");
-
-
 dotenv.load();
 
 // save to the database
@@ -73,7 +71,7 @@ exports.image = function(req, res){
     AWS.config.accessKeyId = S3_ACCESS;
     AWS.config.secretAccessKey = S3_SECRET ;
     var s3bucket = new AWS.S3();
-    console.log(S3_BUCKET);
+    // console.log(S3_BUCKET);
     var s3_params = {
         Bucket: S3_BUCKET,
         Key: fileName,

@@ -6,6 +6,8 @@ var Route = require("react-router").Route;
 var Redirect = require("react-router").Redirect;
 var $ = require("jquery");
 var helpers = require("../utils/helpers");
+var PetSuccess = require("./Pet-Success");
+var PetFailure = require("./Pet-Failure");
 
 var PetDirectoryForm = React.createClass({
 
@@ -19,7 +21,9 @@ var PetDirectoryForm = React.createClass({
       details: "",
       uploading: false,
       uploadedPercent: 0,
-      image : "http://via.placeholder.com/150x150"
+      image: "http://via.placeholder.com/150x150",
+      fireSuccess: false,
+      fireFailure: false
     };
   },
 
@@ -40,6 +44,7 @@ var PetDirectoryForm = React.createClass({
       if (xhr.status === 200) {
         console.log("file uploaded succesfully");
         console.log(response_url);
+
       }
     }.bind(this);
     xhr.onerror = function() {
@@ -77,7 +82,7 @@ var PetDirectoryForm = React.createClass({
 
   fileOnChange: function(e){
     e.preventDefault();
-
+    // render preview image
     let reader = new FileReader();
     let file = e.target.files[0];
 
@@ -118,66 +123,71 @@ var PetDirectoryForm = React.createClass({
 
   handleSubmit: function(event) {
     event.preventDefault();
-    var payload  = {
-      petName : this.state.petname,
-      petOwner : this.state.ownername,
-      petAddress: this.state.address,
-      petPhone : this.state.tel,
-      petImage : this.state.imageUrl,
-      petDescription : this.state.details
-    };
+    if (this.state.petname || this.state.ownername || this.state.address || this.state.tel === "") {
+      this.setState({ fireFailure: true })
+    }
+    else{
+      var payload  = {
+        petName : this.state.petname,
+        petOwner : this.state.ownername,
+        petAddress: this.state.address,
+        petPhone : this.state.tel,
+        petImage : this.state.imageUrl,
+        petDescription : this.state.details
+        };
 
-    helpers.saveQuery(payload).then(function(response) {
-    console.log(response);
-   }.bind(this));
-
+      helpers.saveQuery(payload).then(function(response) {
+      // console.log(response);
+      this.setState({ fireSuccess: true })
+      this.setState({pathname : "/PetDirectory" });
+      }.bind(this));
+    }
   },
 
   render: function() {
     return (
-
-    <form onSubmit={this.handleSubmit} enctype="multipart/form-data">
+    <div>
+    <form onSubmit={this.handleSubmit} encType="multipart/form-data">
      <div className="form-group ">
-      <label className="control-label requiredField" for="petname">
+      <label className="control-label requiredField" htmlFor="petname">
        Pet Name
        <span className="asteriskField">*</span>
       </label>
       <input className="form-control" id="petname" name="petname" type="text" onChange={this.handleInputChange}/>
      </div>
      <div className="form-group ">
-      <label className="control-label requiredField" for="ownername">
+      <label className="control-label requiredField" htmlFor="ownername">
        Owner Name
        <span className="asteriskField">*</span>
       </label>
       <input className="form-control" id="ownername" name="ownername" type="text" onChange={this.handleInputChange}/>
      </div>
      <div className="form-group ">
-      <label className="control-label " for="address">
+      <label className="control-label " htmlFor="address">
        Address
       </label>
       <input className="form-control" id="address" name="address" type="text" onChange={this.handleInputChange}/>
      </div>
      <div className="form-group ">
-      <label className="control-label " for="tel">
+      <label className="control-label " htmlFor="tel">
        Telephone #
       </label>
       <input className="form-control" id="tel" name="tel" type="text" onChange={this.handleInputChange}/>
      </div>
      <div className="form-group ">
-      <label className="control-label " for="tel">
+      <label className="control-label " htmlFor="tel">
        Description
       </label>
       <input className="form-control" id="details" name="details" type="textarea" rows={5} onChange={this.handleInputChange}/>
      </div>
       <div className="form-group ">
-      <label className="control-label col-3" for="upl">
+      <label className="control-label col-3" htmlFor="upl">
        Pet Photo
       </label>
       {/* <input className="form-control" id="upl" name="upl" type="file" onChange={this.handleInputChange}/> */}
       <img style={{ border : '1px solid black' }} height={150} width={150} src={this.state.image} alt="Upload Pet Image"/>
       <input className="form-control" type="file" onChange={this.fileOnChange}/>
      </div>
-
      <div className="form-group">
       <div>
        <button className="btn btn-primary " name="submit" type="submit">
@@ -186,6 +196,15 @@ var PetDirectoryForm = React.createClass({
       </div>
      </div>
     </form>
+    {
+      this.state.fireSuccess == true &&
+      <PetSuccess />
+    }
+    {
+      this.state.fireFailure == true &&
+      <PetFailure />
+    }
+    </div>
 
     );
   }
