@@ -58,9 +58,38 @@ p {
 }
 
 .jumbotron {
+  position: relative;
   margin-bottom: 0px;
   background-color: #26A96C;
   background-image: url("../images/header-trees-small.jpg");
+}
+
+#auth-panel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  color: #2E8665;
+  min-width: 100px;
+  min-height: 30px;
+  padding: 5px;
+  border: 2px #26A96C solid;
+}
+
+.fa {
+  padding: 5px;
+}
+
+.fa,
+.fa:visited,
+.fa:active {
+  text-decoration: none;
+  color: #2E8665 !important;
+}
+
+.fa:hover {
+  text-decoration: none;
+  color: #2BC016 !important;
 }
 
 .jumbotron h5 {
