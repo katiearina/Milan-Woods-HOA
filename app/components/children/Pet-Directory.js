@@ -9,14 +9,14 @@ var PetDirectory = React.createClass({
 
     componentDidMount: function() {
         helpers.listQuery().then(function(response){
-            console.log(response.data);
+            // console.log(response.data);
             this.setState({petList: response.data})
         }.bind(this));
     },
 
     renderEmpty: function() {
         return (
-                <div className="card-block">
+                <div className="card-block" width="200">
                     <blockquote className="card-blockquote">
                         <p>No pets currently present in Pet Directory.</p>
                     </blockquote>
@@ -35,6 +35,7 @@ var PetDirectory = React.createClass({
                         <p>Pet Name   : {pets.petName} </p>
                         <p>Owner Name : {pets.petOwner}</p>
                         <p>Phone #    : {pets.petPhone}</p>
+                        <p>{pets.petDescription}</p>
                         </blockquote>
                     </div>
                 </div>
