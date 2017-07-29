@@ -35,8 +35,8 @@ window.addEventListener('load', function() {
 
   // ...
   var loginStatus = document.getElementById('auth-message');
-  var loginView = document.getElementById('login-view');
-  var homeView = document.getElementById('home-view');
+  var loginView = document.getElementById('auth-message');
+  var homeView = document.getElementById('auth-message');
 
   // buttons and event listeners
   var homeViewBtn = document.getElementById('btn-home-view');
@@ -74,7 +74,6 @@ window.addEventListener('load', function() {
     var expiresAt = JSON.parse(localStorage.getItem('expires_at'));
     return new Date().getTime() < expiresAt;
   }
-
 
   function handleAuthentication() {
     webAuth.parseHash(function(err, authResult) {
