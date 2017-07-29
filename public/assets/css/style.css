@@ -37,6 +37,11 @@ h1 {
   font-weight: 600;
 }
 
+h2 {
+  font-weight: 600;
+  /* Add some sort of (non-bold?) underline */
+}
+
 #pageHeader {
   text-align: center;
   font-family: 'Yatra One', cursive;
@@ -105,6 +110,7 @@ nav {
   padding: 10px;
   height: 95%;
   width: auto;
+  overflow: auto;
 }
 
 #sidebar-content {
@@ -136,6 +142,16 @@ nav {
   width: 85%;
   min-height: 300px;
   border: 1px solid black;
+}
+
+.gov-docs {
+  border: 1px solid black;
+  width: 200px;
+  height: auto;
+}
+
+.card {
+  width: 202px !important;
 }
 
 .row {

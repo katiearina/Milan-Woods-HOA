@@ -14,12 +14,13 @@ render: function(){
         </button>
       </div>
       <div className="modal-body">
-        <p>Your pet had been added to our database.</p>
+        <p>Your pet has been added to our database!</p>
+        <p>What would you like to do now?</p>
       </div>
       <div className="modal-footer">
         <Link to="/PetForm"><button type="button" className="btn btn-primary">Add New Pet</button></Link>
          <Link to="/PetDirectory"><button type="button" className="btn btn-primary" data-dismiss="modal">View Pet Directory</button></Link>
-         <Link to="/" ><button type="button" className="btn btn-primary" data-dismiss="modal">Home</button></Link>
+         <Link to="/" ><button type="button" className="btn btn-primary" data-dismiss="modal">Go Home</button></Link>
       </div>
     </div>
   </div>

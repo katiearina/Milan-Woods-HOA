@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
   var webAuth = new auth0.WebAuth({
     domain: 'katiearina.auth0.com',
     clientID: 'pndfZiJPcidXoAezvZWQfMLR04rRB9DG',
-    redirectUri: 'http://localhost:3000',
+    redirectUri: 'https://afternoon-ravine-62742.herokuapp.com/',
     audience: 'https://katiearina.auth0.com/userinfo',
     responseType: 'token id_token',
     scope: 'openid'
