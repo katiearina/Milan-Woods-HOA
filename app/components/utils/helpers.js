@@ -11,6 +11,11 @@ var helper = {
         console.log("HELP3");
         console.log(inputData)
         return axios.post("/save", inputData);
+    },
+
+    weatherQuery : function() {
+        console.log("WeatherAPI")
+        return axios.get("/getWeather");
     }
 }
 
