@@ -20,10 +20,6 @@ var Navbar = React.createClass({
             </li>
 
             <li className="nav-item">
-              <Link to="/AuthTest" className="nav-link">Auth<span className="sr-only">(current)</span></Link>
-            </li>
-
-            <li className="nav-item">
               <Link to="/ArcApp" className="nav-link">ARC Application<span className="sr-only">(current)</span></Link>
             </li>
 
