@@ -16,7 +16,7 @@ var Navbar = React.createClass({
           <ul className="navbar-nav">
 
             <li className="nav-item">
-              <Link to="/Home" className="nav-link">Home<span className="sr-only">(current)</span></Link>
+              <Link to="/" className="nav-link">Home<span className="sr-only">(current)</span></Link>
             </li>
 
             <li className="nav-item">
