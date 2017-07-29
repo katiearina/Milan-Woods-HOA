@@ -5,6 +5,7 @@ var Header = React.createClass({
     return (
       <div className="jumbotron jumbotron-fluid">
           <div id="auth-panel">
+            <div id="auth-message" />
             <i id="btn-home-view" className="fa fa-home" aria-hidden="true" />
             <i id="btn-login" className="fa fa-key" aria-hidden="true" />
             <i id="btn-logout" className="fa fa-sign-out" aria-hidden="true" />

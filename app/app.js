@@ -33,12 +33,8 @@ window.addEventListener('load', function() {
     webAuth.authorize();
   });
 
-});
-
-window.addEventListener('load', function() {
-
   // ...
-  var loginStatus = document.querySelector('.container h4');
+  var loginStatus = document.getElementById('auth-message');
   var loginView = document.getElementById('login-view');
   var homeView = document.getElementById('home-view');
 
