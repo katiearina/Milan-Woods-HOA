@@ -123,7 +123,11 @@ var PetDirectoryForm = React.createClass({
 
   handleSubmit: function(event) {
     event.preventDefault();
-    if (this.state.petname || this.state.ownername || this.state.address || this.state.tel === "") {
+    console.log(this.state.petname)
+    console.log(this.state.ownername)
+    console.log(this.state.address)
+    console.log(this.state.tel)
+    if ((this.state.petname === "") || (this.state.ownername === "") || (this.state.address === "") || (this.state.tel === "")) {
       this.setState({ fireFailure: true })
     }
     else{
