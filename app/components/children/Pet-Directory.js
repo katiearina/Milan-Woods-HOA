@@ -16,7 +16,7 @@ var PetDirectory = React.createClass({
 
     renderEmpty: function() {
         return (
-                <div className="card-block">
+                <div className="card-block" width="200">
                     <blockquote className="card-blockquote">
                         <p>No pets currently present in Pet Directory.</p>
                     </blockquote>
