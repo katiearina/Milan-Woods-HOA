@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
   var webAuth = new auth0.WebAuth({
     domain: 'katiearina.auth0.com',
     clientID: 'pndfZiJPcidXoAezvZWQfMLR04rRB9DG',
-    redirectUri: 'https://afternoon-ravine-62742.herokuapp.com/',
+    redirectUri: window.location.href,
     audience: 'https://katiearina.auth0.com/userinfo',
     responseType: 'token id_token',
     scope: 'openid'
@@ -33,12 +33,8 @@ window.addEventListener('load', function() {
     webAuth.authorize();
   });
 
-});
-
-window.addEventListener('load', function() {
-
   // ...
-  var loginStatus = document.querySelector('.container h4');
+  var loginStatus = document.getElementById('auth-message');
   var loginView = document.getElementById('login-view');
   var homeView = document.getElementById('home-view');
 
