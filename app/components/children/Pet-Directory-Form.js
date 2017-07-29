@@ -17,11 +17,11 @@ var PetDirectoryForm = React.createClass({
       ownername: "",
       address: "",
       tel: "",
-      imageUrl: "",
+      imageUrl: "https://s3.amazonaws.com/milanwoods/PetDirectory/DefaultPet.png",
       details: "",
       uploading: false,
       uploadedPercent: 0,
-      image: "http://via.placeholder.com/150x150",
+      image: "https://s3.amazonaws.com/milanwoods/PetDirectory/DefaultPet.png",
       fireSuccess: false,
       fireFailure: false
     };
@@ -42,8 +42,6 @@ var PetDirectoryForm = React.createClass({
     xhr.setRequestHeader('x-amz-acl', 'public-read');
     xhr.onload = function() {
       if (xhr.status === 200) {
-        console.log("file uploaded succesfully");
-        console.log(response_url);
 
       }
     }.bind(this);
@@ -56,9 +54,7 @@ var PetDirectoryForm = React.createClass({
   },
 
   getSignedRequest: function(file){
-    // console.log('getSignedRequest');
     var fileObject = { file : { type : file.type, size : file.size } };
-    // console.log(fileObject);
     $.ajax({
       url: "/image",
       data : JSON.stringify(fileObject),
@@ -68,10 +64,6 @@ var PetDirectoryForm = React.createClass({
       method : 'POST',
       success: function(data) {
         this.uploadFile( file, data.data.requestUrl, data.data.imageUrl );
-        // console.log('requestURL');
-        // console.log(data.data.requestUrl);
-        // console.log('imgeURL');
-        // console.log(data.data.imageUrl);
 
       }.bind(this),
       error: function(xhr, status, err) {
@@ -93,8 +85,6 @@ var PetDirectoryForm = React.createClass({
     };
 
     reader.readAsDataURL(file)
-    // var file = e.target.files[0];
-    // console.log(e.target);
     if( file ){
       if( file.type == "image/png" || file.type == "image/jpeg" || file.type == "image/jpg"){
         if( file.size > 2200000 ){
@@ -123,10 +113,6 @@ var PetDirectoryForm = React.createClass({
 
   handleSubmit: function(event) {
     event.preventDefault();
-    console.log(this.state.petname)
-    console.log(this.state.ownername)
-    console.log(this.state.address)
-    console.log(this.state.tel)
     if ((this.state.petname === "") || (this.state.ownername === "") || (this.state.address === "") || (this.state.tel === "")) {
       this.setState({ fireFailure: true })
     }
@@ -141,7 +127,6 @@ var PetDirectoryForm = React.createClass({
         };
 
       helpers.saveQuery(payload).then(function(response) {
-      // console.log(response);
       this.setState({ fireSuccess: true })
       this.setState({pathname : "/PetDirectory" });
       }.bind(this));

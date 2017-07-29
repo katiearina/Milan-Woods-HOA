@@ -7,9 +7,7 @@ dotenv.load();
 
 // save to the database
 exports.save = function(req, res) {
-    // res.send("In SAVE");
-    console.log("In SAVE")
-    console.log(req)
+
     Pets.create({
         petName : req.body.petName,
         petOwner : req.body.petOwner,
@@ -30,8 +28,7 @@ exports.save = function(req, res) {
 
 // return data from database
 exports.list = function(req, res) {
-    // res.send("IN LIST")
-    console.log("In List")
+
     Pets.find({})
     .exec(function(err, doc) {
 
@@ -48,8 +45,7 @@ exports.image = function(req, res){
     const S3_BUCKET = process.env.S3_BUCKET_NAME;
     const S3_ACCESS = process.env.AWS_ACCESS_KEY_ID;
     const S3_SECRET = process.env.AWS_SECRET_ACCESS_KEY;
-    console.log("IMAGE")
-    // console.log(req);
+
     if( !req.body.file ){ res.json( generalResponse( null,2 ) ); return; }
     var file = req.body.file;
 
@@ -67,11 +63,10 @@ exports.image = function(req, res){
     else if( file.type == "image/jpg") { fileName = uuid.v4() + '.jpg'; }
     else{ res.json( generalResponse( null,5 ) ); return; }
 
-    // AWS.config.region = 'eu-west-1';
     AWS.config.accessKeyId = S3_ACCESS;
     AWS.config.secretAccessKey = S3_SECRET ;
     var s3bucket = new AWS.S3();
-    // console.log(S3_BUCKET);
+
     var s3_params = {
         Bucket: S3_BUCKET,
         Key: fileName,
