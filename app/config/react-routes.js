@@ -28,7 +28,6 @@ var CollectionSchedule = require("../components/children/Collection-Schedule");
 var GoverningDocs = require("../components/children/Governing-Docs");
 var PetDirectoryForm = require("../components/children/Pet-Directory-Form");
 var PetDirectory = require("../components/children/Pet-Directory");
-var AuthTest = require("../components/children/static/AuthTest");
 
 // Export the Routes
 module.exports = (
@@ -44,7 +43,6 @@ module.exports = (
       <Route path="GoverningDocs" component={GoverningDocs} />
       <Route path="PetForm" component={PetDirectoryForm} />
       <Route path="PetDirectory" component={PetDirectory} />
-      <Route path="AuthTest" component={AuthTest} />
 
       {/* Default path */}
       <IndexRoute component={Home} />
