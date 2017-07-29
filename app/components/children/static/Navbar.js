@@ -28,7 +28,7 @@ var Navbar = React.createClass({
             </li>
 
             <li className="nav-item">
-              <Link to="/Collection" className="nav-link">Collection Schedule</Link>
+              <Link to="/Calendar" className="nav-link">Calendar</Link>
             </li>
 
             <li className="nav-item">
