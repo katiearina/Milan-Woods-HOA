@@ -21,7 +21,7 @@ window.addEventListener('load', function() {
     redirectUri: window.location.href,
     audience: 'https://katiearina.auth0.com/userinfo',
     responseType: 'token id_token',
-    scope: 'openid'
+    scope: 'openid profile'
   });
 
   console.log(webAuth);
@@ -98,6 +98,7 @@ window.addEventListener('load', function() {
       loginBtn.style.display = 'none';
       logoutBtn.style.display = 'inline-block';
       loginStatus.innerHTML = 'You are logged in!';
+      getProfile();
     } else {
       loginBtn.style.display = 'inline-block';
       logoutBtn.style.display = 'none';
@@ -106,6 +107,34 @@ window.addEventListener('load', function() {
     }
   }
 
+  var userProfile;
+
+  function getProfile() {
+    if (!userProfile) {
+      var accessToken = localStorage.getItem('access_token');
+      console.log(accessToken);
+
+      if (!accessToken) {
+        console.log('Access token must exist to fetch profile');
+      }
+
+      webAuth.client.userInfo(accessToken, function(err, profile) {
+        if (profile) {
+          userProfile = profile;
+          displayProfile();
+        }
+      });
+    } else {
+      displayProfile();
+    }
+  }
+
+  function displayProfile() {
+    // display the profile
+    loginStatus.innerHTML = "Hi, " + userProfile.nickname + "!";
+  }
+
   handleAuthentication();
+  // getProfile();
 
 });
