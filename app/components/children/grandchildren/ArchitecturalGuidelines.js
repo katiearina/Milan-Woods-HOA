@@ -3,7 +3,6 @@ var Modal = require("reactstrap").Modal;
 var ModalHeader = require("reactstrap").ModalHeader;
 var ModalBody = require("reactstrap").ModalBody;
 var ModalFooter = require("reactstrap").ModalFooter;
-// import {Modal, ModalHeader, ModalBody, ModalFooter} from "reactstrap";
 
 class ArchitecturalGuidelines extends React.Component{
 
