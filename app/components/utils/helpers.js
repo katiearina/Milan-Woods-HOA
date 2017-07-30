@@ -15,6 +15,10 @@ var helper = {
     weatherQuery : function() {
 
         return axios.get("/getWeather");
+    },
+
+    twitterQuery : function () {
+        return axios.get('/getTwitter');
     }
 }
 
