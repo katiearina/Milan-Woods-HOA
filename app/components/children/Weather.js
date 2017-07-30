@@ -30,10 +30,10 @@ var Weather = React.createClass({
     render : function (){
         return (
         <div>
-            <p>Temp : {this.state.temp}</p>
-            <p>Day  : {this.state.day}</p>
-            <p>Wind : {this.state.wind}</p>
+          <h5>Current Weather</h5>
             <img src={this.state.image}/>
+            <p>Temperature: {this.state.temp}&deg;<span id="fahrenheit">F</span></p>
+            <p>Wind: {this.state.wind}</p>
         </div>
         );
     }

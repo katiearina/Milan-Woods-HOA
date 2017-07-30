@@ -24,7 +24,7 @@ var Main = require("../components/Main");
 var Home = require("../components/children/static/Home");
 var ArcApp = require("../components/children/ARC-Application");
 var BoardMembers = require("../components/children/Board-Members");
-var CollectionSchedule = require("../components/children/Collection-Schedule");
+var Calendar = require("../components/children/Calendar");
 var GoverningDocs = require("../components/children/Governing-Docs");
 var PetDirectoryForm = require("../components/children/Pet-Directory-Form");
 var PetDirectory = require("../components/children/Pet-Directory");
@@ -39,7 +39,7 @@ module.exports = (
 
       <Route path="ArcApp" component={ArcApp} />
       <Route path="BoardMembers" component={BoardMembers} />
-      <Route path="Collection" component={CollectionSchedule} />
+      <Route path="Calendar" component={Calendar} />
       <Route path="GoverningDocs" component={GoverningDocs} />
       <Route path="PetForm" component={PetDirectoryForm} />
       <Route path="PetDirectory" component={PetDirectory} />
