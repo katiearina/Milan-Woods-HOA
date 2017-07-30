@@ -41,7 +41,7 @@ exports.getTwitter = function(req, res) {
         count: 10
       };
     client.get('statuses/user_timeline', params, function(error, tweets, response) {
-        // if (error) throw error;
+        if (error) throw error;
         //  console.log(tweets);
          res.json(tweets);
 

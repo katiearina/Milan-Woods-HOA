@@ -24,7 +24,7 @@ window.addEventListener('load', function() {
     scope: 'openid profile'
   });
 
-  console.log(webAuth);
+  // console.log(webAuth);
 
   var loginBtn = document.getElementById('btn-login');
 
@@ -112,7 +112,7 @@ window.addEventListener('load', function() {
   function getProfile() {
     if (!userProfile) {
       var accessToken = localStorage.getItem('access_token');
-      console.log(accessToken);
+      // console.log(accessToken);
 
       if (!accessToken) {
         console.log('Access token must exist to fetch profile');

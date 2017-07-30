@@ -9,7 +9,7 @@ var TwitterFeed = React.createClass({
 
     componentWillMount: function() {
         helpers.twitterQuery().then(function(response){
-            console.log(response.data);
+            // console.log(response.data);
             this.setState({tweetList: response.data})
         }.bind(this));
     },
@@ -17,7 +17,7 @@ var TwitterFeed = React.createClass({
     renderEmpty: function() {
         return (
                 <div>
-                    <p>No tweets currently present in Pet Directory.</p>
+                    <p>No tweets currently present.</p>
                 </div>
         );
     },
