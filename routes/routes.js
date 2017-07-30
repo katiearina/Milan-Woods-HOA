@@ -17,4 +17,9 @@ app.post('/image', pet_controller.image);
 
 // call route to get data from weather
 app.get("/getWeather",ext_controller.getWeather);
+
+// call router to get twitter feed data
+app.get("/getTwitter",ext_controller.getTwitter);
 };
+
+
