@@ -156,6 +156,11 @@ nav {
   font-size: 45px;
 }
 
+#fahrenheit {
+  font-size: .5rem;
+  vertical-align: super;
+}
+
 .sidebar-links {
   position: relative;
 }
