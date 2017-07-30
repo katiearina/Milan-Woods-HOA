@@ -1,5 +1,8 @@
 var React = require("react");
-import {Modal, ModalHeader, ModalBody, ModalFooter} from "reactstrap";
+var Modal = require("reactstrap").Modal;
+var ModalHeader = require("reactstrap").ModalHeader;
+var ModalBody = require("reactstrap").ModalBody;
+var ModalFooter = require("reactstrap").ModalFooter;
 
 class Covenants extends React.Component{
 

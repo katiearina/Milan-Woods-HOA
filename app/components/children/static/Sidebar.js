@@ -21,7 +21,7 @@ var Sidebar = React.createClass({
           </div>
             <hr />
               <Weather />
-              <hr />
+            <hr />
               <TwitterFeed />
         </div>
       </div>
