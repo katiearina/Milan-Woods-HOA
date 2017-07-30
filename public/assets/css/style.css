@@ -218,6 +218,23 @@ nav {
   width: 202px !important;
 }
 
+.modal {
+   position: fixed;
+   top: 10px;
+   right: 100px;
+   bottom: 0;
+   left: 0;
+   z-index: 10040;
+   overflow: auto;
+   overflow-y: auto;
+}
+
+
+.modal-pdf {
+  width: 100% !important;
+  height: 500px;
+}
+
 .modal-close {
   cursor:pointer;
 }
