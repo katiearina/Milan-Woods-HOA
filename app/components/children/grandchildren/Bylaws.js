@@ -1,5 +1,8 @@
 var React = require("react");
-import {Modal, ModalHeader, ModalBody, ModalFooter} from "reactstrap";
+var Modal = require("reactstrap").Modal;
+var ModalHeader = require("reactstrap").ModalHeader;
+var ModalBody = require("reactstrap").ModalBody;
+var ModalFooter = require("reactstrap").ModalFooter;
 
 class Bylaws extends React.Component{
 
@@ -29,9 +32,9 @@ class Bylaws extends React.Component{
           </div>
 
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+            <ModalHeader toggle={this.toggle}>Bylaws</ModalHeader>
             <ModalBody>
-              Bylaws!
+              <iframe className="modal-pdf" src="./assets/documents/Bylaws-MilanWoods.pdf" alt="Bylaws - PDF" />
             </ModalBody>
             <ModalFooter>
               <p className="modal-close" onClick={this.toggle}>Close</p>

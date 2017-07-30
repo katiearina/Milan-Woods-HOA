@@ -1,5 +1,8 @@
 var React = require("react");
-import {Modal, ModalHeader, ModalBody, ModalFooter} from "reactstrap";
+var Modal = require("reactstrap").Modal;
+var ModalHeader = require("reactstrap").ModalHeader;
+var ModalBody = require("reactstrap").ModalBody;
+var ModalFooter = require("reactstrap").ModalFooter;
 
 class ArchitecturalGuidelines extends React.Component{
 
@@ -29,9 +32,9 @@ class ArchitecturalGuidelines extends React.Component{
           </div>
 
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+            <ModalHeader toggle={this.toggle}>Architectural Guidelines</ModalHeader>
             <ModalBody>
-              Architectural Guidelines!
+              <iframe className="modal-pdf" src="./assets/documents/ArchitecturalGuidelines-MilanWoods.pdf" alt="Architectural Guidelines - PDF" />
             </ModalBody>
             <ModalFooter>
               <p className="modal-close" onClick={this.toggle}>Close</p>

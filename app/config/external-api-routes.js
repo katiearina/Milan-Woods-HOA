@@ -1,5 +1,5 @@
 var weather = require("weather-js");
-var twitter_mod = require("twitter");
+// var twitter_mod = require("twitter");
 var dotenv = require("dotenv");
 dotenv.load();
 
@@ -27,6 +27,7 @@ weather.find({ search: "Durham, NC", degreeType: "F" }, function(err, result) {
 
 };
 
+<<<<<<< HEAD
 exports.getTwitter = function(req, res) {
   var twitterAccount = "DurhamPoliceNC"
   var client = new twitter_mod({
@@ -48,4 +49,27 @@ exports.getTwitter = function(req, res) {
     });
 
 }
+=======
+// exports.getTwitter = function(req, res) {
+//   var twitterAccount = "DurhamPoliceNC"
+//   var client = new twitter_mod({
+//       consumer_key: process.env.CONSUMER_KEY,
+//       consumer_secret: process.env.CONSUMER_SECRET,
+//       access_token_key: process.env.ACCESS_TOKEN_KEY,
+//       access_token_secret: process.env.ACCESS_TOKEN_SECRET
+//     });
+
+//     var params = {
+//         screen_name: twitterAccount,
+//         count: 10
+//       };
+//     client.get('statuses/user_timeline', params, function(error, tweets, response) {
+//         // if (error) throw error;
+//         //  console.log(tweets);
+//          res.json(tweets);
+
+//     });
+
+// }
+>>>>>>> 66095c7ef3b8157c04c48347f8db83a9763e19df
 

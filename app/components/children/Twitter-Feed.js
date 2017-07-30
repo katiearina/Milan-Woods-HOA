@@ -1,7 +1,8 @@
 var React = require("react");
-var helpers = require("../utils/helpers");
+var Timeline = require('react-twitter-widgets').Timeline;
 
 var TwitterFeed = React.createClass({
+<<<<<<< HEAD
 
     getInitialState: function(){
         return { tweetList: ""};
@@ -41,14 +42,24 @@ var TwitterFeed = React.createClass({
         )
     },
 
+=======
+>>>>>>> 66095c7ef3b8157c04c48347f8db83a9763e19df
   render: function() {
-    if (!this.state.tweetList) {
-        return this.renderEmpty();
-    }
+    return (
+      <Timeline
+          dataSource={{
+            sourceType: 'profile',
+            screenName: 'CityofDurhamNC'
+          }}
+          options={{
+            username: 'CityofDurhamNC',
+            height: '300'
+          }}
+          onLoad={() => console.log('Timeline is loaded!')}
+        />
 
-    return this.renderContainer();
+      );
   }
-
 });
 
 module.exports = TwitterFeed;
