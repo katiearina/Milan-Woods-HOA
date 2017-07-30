@@ -7,12 +7,11 @@ body {
 a:link,
 a:visited {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 a:hover {
   text-decoration: none;
-  color: #98007B;
 }
 
 a:active {
@@ -234,7 +233,7 @@ body {
 /* Wrapper for page content to push down footer */
 
 #wrap {
-    min-height: 100vh;
+    min-height: 105vh;
     height: auto;
     /* Negative indent footer by its height */
     /* margin: 0px auto -40px; */
@@ -248,14 +247,15 @@ body {
 #footer {
     /* Must match margin-bottom in .wrapper CSS */
     /* Set the fixed height of the footer here */
-    height: 40px;
-    background-color: #395E66;
-    color: black;
+    height: 35px;
+    background-color: #98007B;
+    color: plum;
     overflow: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 5px;
-    border-top: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    border-top: 1px solid #395E66;
     text-align: center;
 }
 
@@ -263,4 +263,9 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
     margin-bottom: 0;
+}
+
+#footer p a:hover {
+  color: plum;
+  text-transform: uppercase;
 }
