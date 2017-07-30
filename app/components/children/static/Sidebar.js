@@ -2,6 +2,7 @@ var React = require("react");
 var Weather = require("../Weather");
 var Nextdoor = require("../Nextdoor");
 var PayDues = require("../PayDues");
+var TwitterFeed = require("../Twitter-Feed")
 
 var Sidebar = React.createClass({
   render: function() {
@@ -20,6 +21,8 @@ var Sidebar = React.createClass({
           </div>
             <hr />
               <Weather />
+              <hr />
+              <TwitterFeed />
         </div>
       </div>
     );
