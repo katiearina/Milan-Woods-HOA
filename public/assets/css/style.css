@@ -157,6 +157,25 @@ nav {
   font-size: 45px;
 }
 
+.sidebar-links {
+  position: relative;
+}
+
+.sidebar-links .hover-text {
+  position: absolute;
+  visibility: hidden;
+  overflow: hidden;
+  width: 90px;
+  background-color: plum;
+  color: white;
+  bottom: -20px; 
+  border-radius: 6px;
+}
+
+.sidebar-links:hover .hover-text {
+  visibility: visible;
+}
+
 #main-row {
   min-height: 80vh;
 }
