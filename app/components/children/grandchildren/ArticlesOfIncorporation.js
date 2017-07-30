@@ -29,9 +29,9 @@ class ArticlesOfIncorporation extends React.Component{
           </div>
 
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+            <ModalHeader toggle={this.toggle}>Articles of Incorporation</ModalHeader>
             <ModalBody>
-              Articles of Incorporation!
+              <iframe className="modal-pdf" src="./assets/documents/ArticlesOfIncorporation-MilanWoods.pdf" alt="Articles of Incorporation - PDF" />
             </ModalBody>
             <ModalFooter>
               <p className="modal-close" onClick={this.toggle}>Close</p>

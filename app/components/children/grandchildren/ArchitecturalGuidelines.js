@@ -31,7 +31,7 @@ class ArchitecturalGuidelines extends React.Component{
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
             <ModalHeader toggle={this.toggle}>Architectural Guidelines</ModalHeader>
             <ModalBody>
-              <iframe id="AGpdf" src="./assets/documents/ArchitecturalGuidelines-MilanWoods.pdf" alt="Architectural Guidelines - PDF" />
+              <iframe className="modal-pdf" src="./assets/documents/ArchitecturalGuidelines-MilanWoods.pdf" alt="Architectural Guidelines - PDF" />
             </ModalBody>
             <ModalFooter>
               <p className="modal-close" onClick={this.toggle}>Close</p>

@@ -29,9 +29,9 @@ class Covenants extends React.Component{
           </div>
 
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+            <ModalHeader toggle={this.toggle}>Covenants</ModalHeader>
             <ModalBody>
-              Covenants!
+              <iframe className="modal-pdf" src="./assets/documents/Covenants-MilanWoods.pdf" alt="Covenants - PDF" />
             </ModalBody>
             <ModalFooter>
               <p className="modal-close" onClick={this.toggle}>Close</p>
