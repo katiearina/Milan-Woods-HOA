@@ -204,6 +204,10 @@ nav {
   border: 1px solid black;
 }
 
+#board-member-table {
+  text-align: left;
+}
+
 .gov-docs {
   border: 1px solid black;
   width: 200px;
