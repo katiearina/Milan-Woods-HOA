@@ -12,7 +12,7 @@ var Weather = React.createClass({
     },
 
     componentWillMount : function () {
-        console.log("COMPONENT MOUNTED");
+        // console.log("COMPONENT MOUNTED");
 
     // The moment the page renders on page load, we will retrieve the previous click count.
     // We will then utilize that click count to change the value of the click state.

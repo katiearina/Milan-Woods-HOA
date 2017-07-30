@@ -21,7 +21,7 @@ exports.save = function(req, res) {
         }
         else {
             res.send("Saved Search");
-            console.log("SAVED");
+            // console.log("SAVED");
         }
     });
 };
@@ -70,7 +70,7 @@ exports.image = function(req, res){
     var s3_params = {
         Bucket: S3_BUCKET,
         Key: fileName,
-        Expires: 60, // expire after 60 mins
+        Expires: 5, // expire after 5 mins
         ContentType: file.type,
         ACL: 'public-read'
     };
