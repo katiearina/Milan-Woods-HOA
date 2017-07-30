@@ -8,10 +8,16 @@ var Sidebar = React.createClass({
     return (
       <div className="col-3 sidebar">
         <div id="sidebar-content">
-          <h4>Sidebar Test</h4>
-            <hr />
+          <div className="row">
+            <div className="col-4">
               <Nextdoor />
+            </div>
+            <div className="col-4">
               <PayDues />
+            </div>
+            <div className="col-4">
+            </div>
+          </div>
             <hr />
               <Weather />
         </div>

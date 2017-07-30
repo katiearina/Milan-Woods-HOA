@@ -167,9 +167,10 @@ nav {
   overflow: hidden;
   width: 90px;
   background-color: plum;
-  color: white;
-  bottom: -20px; 
-  border-radius: 6px;
+  color: black;
+  bottom: -20px;
+  left: -15%;
+  /* border-radius: 6px; */
 }
 
 .sidebar-links:hover .hover-text {
