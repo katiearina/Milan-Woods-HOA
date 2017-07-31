@@ -239,6 +239,14 @@ nav {
   cursor:pointer;
 }
 
+.modal-footer {
+  padding: 15px 15px 0px 15px;
+}
+
+.modal-title {
+  margin: 0px auto;
+}
+
 .row {
   margin-right: 0px !important;
   margin-left: 0px !important;

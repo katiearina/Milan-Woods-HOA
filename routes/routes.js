@@ -26,5 +26,3 @@ app.get('*', function(req, res) {
 // app.get("/getTwitter",ext_controller.getTwitter);
 
 };
-
-
