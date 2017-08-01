@@ -144,6 +144,7 @@ nav {
 
 #sidebar-content {
   margin-left: 0px;
+  overflow: hidden;
 }
 
 #nextdoor {
@@ -154,6 +155,11 @@ nav {
 #pay-dues {
   color: #009F5F !important;
   font-size: 45px;
+}
+
+#map-pin {
+  color: #009F5F !important;
+  font-size: 50px;
 }
 
 #fahrenheit {
