@@ -8,17 +8,17 @@ render: function(){
   <div className="modal-dialog" role="document">
     <div className="modal-content">
       <div className="modal-header">
-        <h5 className="modal-title" id="failure-modal-title">Failure</h5>
-        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 className="modal-title" id="failure-modal-title">Oh no!</h5>
+          <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
       </div>
       <div className="modal-body">
         <p>Something went wrong please try again later.</p>
       </div>
       <div className="modal-footer">
-         <Link to="/PetDirectory"><p>View Pet Directory</p></Link>
-         <Link to="/"><p>Home</p></Link>
+         <Link to="/PetDirectory"><p data-dismiss="modal">View Pet Directory</p></Link>
+         <Link to="/"><p data-dismiss="modal">Home</p></Link>
       </div>
     </div>
   </div>
