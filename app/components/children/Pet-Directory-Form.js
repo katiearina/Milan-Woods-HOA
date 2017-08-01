@@ -27,6 +27,14 @@ var PetDirectoryForm = React.createClass({
     };
   },
 
+punchParent: function () {
+  this.setState({
+    fireSuccess : false,
+    fireFailure:false
+  })
+
+},
+
   uploadFile: function(file,signed_request,response_url){
     this.setState({ uploading : true });
     var xhr = new XMLHttpRequest();
@@ -187,11 +195,11 @@ var PetDirectoryForm = React.createClass({
     </form>
     {
       this.state.fireSuccess == true &&
-      <PetSuccess />
+      <PetSuccess closeModal={this.punchParent} />
     }
     {
       this.state.fireFailure == true &&
-      <PetFailure />
+      <PetFailure closeModal={this.punchParent}/>
     }
     </div>
 

@@ -9,9 +9,9 @@ render: function(){
     <div className="modal-content">
       <div className="modal-header">
         <h5 className="modal-title">Success</h5>
-        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+        <Link to="/PetDirectory"><button type="button" onClick={this.props.closeModal} className="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-        </button>
+        </button></Link>
       </div>
       <div className="modal-body">
         <p>Your pet has been added to our database!</p>
