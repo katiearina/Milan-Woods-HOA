@@ -156,6 +156,11 @@ nav {
   font-size: 45px;
 }
 
+#map-pin {
+  color: #009F5F !important;
+  font-size: 50px;
+}
+
 #fahrenheit {
   font-size: .5rem;
   vertical-align: super;
