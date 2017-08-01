@@ -144,6 +144,7 @@ nav {
 
 #sidebar-content {
   margin-left: 0px;
+  overflow: hidden;
 }
 
 #nextdoor {
