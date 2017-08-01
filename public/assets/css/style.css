@@ -192,6 +192,10 @@ nav {
   opacity: 1;
 }
 
+#failure-modal-title {
+  margin: 15px auto 0px auto;
+}
+
 #google-map {
   min-width: 300px;
   min-height: 225px;
@@ -204,6 +208,10 @@ nav {
   border: 1px solid black;
 }
 
+#board-member-table {
+  text-align: left;
+}
+
 .gov-docs {
   border: 1px solid black;
   width: 200px;
@@ -214,8 +222,33 @@ nav {
   width: 202px !important;
 }
 
+.modal {
+   position: fixed;
+   top: 10px;
+   right: 100px;
+   bottom: 0;
+   left: 0;
+   z-index: 10040;
+   overflow: auto;
+   overflow-y: auto;
+}
+
+
+.modal-pdf {
+  width: 100% !important;
+  height: 500px;
+}
+
 .modal-close {
   cursor:pointer;
+}
+
+.modal-footer {
+  padding: 15px 15px 0px 15px;
+}
+
+.modal-title {
+  margin: 0px auto;
 }
 
 .row {
