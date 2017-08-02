@@ -7,7 +7,7 @@ var PetDirectory = React.createClass({
         return { petList: ""};
     },
 
-    componentDidMount: function() {
+    componentWillMount: function() {
         helpers.listQuery().then(function(response){
             // console.log(response.data);
             this.setState({petList: response.data})

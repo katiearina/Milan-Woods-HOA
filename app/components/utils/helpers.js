@@ -1,5 +1,7 @@
 var axios = require("axios");
 
+// ALL routes located in routes/routes.js
+
 var helper = {
 
     listQuery : function () {
