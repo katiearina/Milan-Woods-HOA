@@ -26,7 +26,7 @@ class MapPin extends React.Component{
   }
 
   componentWillMount() {
-    this.setState({mapUrl: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyD-spK8c4Z45hLR1FacjqWC-bbCNUX_8Xw&q=Milan+Woods,Durham+NC'})
+    this.setState({mapUrl: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyD-spK8c4Z45hLR1FacjqWC-bbCNUX_8Xw&zoom=15&center=36.0104287,-78.8552636&q=Milan+Woods,Durham+NC'})
   }
 
   render() {
