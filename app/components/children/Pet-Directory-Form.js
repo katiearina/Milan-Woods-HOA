@@ -179,13 +179,20 @@ punchParent: function () {
       <input className="form-control" id="details" name="details" type="textarea" rows={5} onChange={this.handleInputChange}/>
      </div>
       <div className="form-group ">
+      <div>
       <label className="control-label col-3" htmlFor="upl">
        Pet Photo
       </label>
+
+      <div>
       {/* <input className="form-control" id="upl" name="upl" type="file" onChange={this.handleInputChange}/> */}
       <img style={{ border : '1px solid black' }} height={150} width={150} src={this.state.image} alt="Upload Pet Image"/>
-      <input className="form-control" type="file" onChange={this.fileOnChange}/>
+      </div>
+      <br/>
+      <label className="btn btn-primary" htmlFor="my-file-selector"><input className="form-control" type="file" onChange={this.fileOnChange} id="my-file-selector" style={{display : "none"}}/>Select Image File</label>
+      </div>
      </div>
+     <hr/>
      <div className="form-group">
       <div>
        <button className="btn btn-primary " name="submit" type="submit">
