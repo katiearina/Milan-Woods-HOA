@@ -46,7 +46,7 @@ New and existing members of the Milan Woods community in Durham, NC
 
 + Amazon Web Services
 
-+ NPM Packages such as: [Dotenv](https://www.npmjs.com/package/dotenv "Dotenv"), [Reactstrap](https://www.npmjs.com/package/reactstrap "Reactstrap"), [React-Twitter-JS](https://www.npmjs.com/package/react-twitter-widgets "React-Twitter-JS"), and [Weather-JS](https://www.npmjs.com/package/weather-js "Weather-JS")
++ NPM Packages such as: [Dotenv](https://www.npmjs.com/package/dotenv "Dotenv"), [Reactstrap](https://www.npmjs.com/package/reactstrap "Reactstrap"), [React-EmojiOne](https://www.npmjs.com/package/react-emojione "React-EmojiOne"), [React-Twitter-JS](https://www.npmjs.com/package/react-twitter-widgets "React-Twitter-JS"), and [Weather-JS](https://www.npmjs.com/package/weather-js "Weather-JS")
 
 ## Demo
 *Coming Soon*

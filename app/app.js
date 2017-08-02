@@ -36,17 +36,17 @@ window.addEventListener('load', function() {
   // ...
   var loginStatus = document.getElementById('auth-message');
   var loginView = document.getElementById('auth-message');
-  var homeView = document.getElementById('auth-message');
+  // var homeView = document.getElementById('auth-message');
 
   // buttons and event listeners
-  var homeViewBtn = document.getElementById('btn-home-view');
+  // var homeViewBtn = document.getElementById('btn-home-view');
   var loginBtn = document.getElementById('btn-login');
   var logoutBtn = document.getElementById('btn-logout');
 
-  homeViewBtn.addEventListener('click', function() {
-    homeView.style.display = 'inline-block';
-    loginView.style.display = 'none';
-  });
+  // homeViewBtn.addEventListener('click', function() {
+  //   homeView.style.display = 'inline-block';
+  //   loginView.style.display = 'none';
+  // });
 
   logoutBtn.addEventListener('click', logout);
 
@@ -81,9 +81,9 @@ window.addEventListener('load', function() {
         window.location.hash = '';
         setSession(authResult);
         loginBtn.style.display = 'none';
-        homeView.style.display = 'inline-block';
+        // homeView.style.display = 'inline-block';
       } else if (err) {
-        homeView.style.display = 'inline-block';
+        // homeView.style.display = 'inline-block';
         console.log(err);
         alert(
           'Error: ' + err.error + '. Check the console for further details.'
@@ -131,7 +131,7 @@ window.addEventListener('load', function() {
 
   function displayProfile() {
     // display the profile
-    loginStatus.innerHTML = "Hi, " + userProfile.nickname + "!";
+    loginStatus.innerHTML = "Hey, " + userProfile.nickname + "!";
   }
 
   handleAuthentication();
