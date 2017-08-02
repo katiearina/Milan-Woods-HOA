@@ -34,7 +34,10 @@ class MapPin extends React.Component{
       <div>
         <div className="sidebar-links">
           <span className="hover-text">Show on Map</span>
-            <i id="map-pin" className="material-icons" onClick={this.toggle}>place</i>
+            <span className="fa-stack fa-lg" onClick={this.toggle}>
+              <i id="map" className="fa fa-map-o fa-stack-2x"></i>
+              <i id="map-pin" className="fa fa-map-marker fa-stack-1x"></i>
+            </span>
         </div>
 
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
