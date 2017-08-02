@@ -27,6 +27,16 @@ a:active {
   color: #2E8665 !important;
 }
 
+.dropdown-item, .dropdown-item:visited, .dropdown-item:active {
+  text-decoration: none;
+  color: #2E8665 !important;
+}
+
+.dropdown-item:hover {
+  text-decoration: none;
+  color: #2BC016 !important;
+}
+
 .nav-link:hover {
   text-decoration: none;
   color: #2BC016 !important;
