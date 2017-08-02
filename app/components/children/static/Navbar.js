@@ -24,7 +24,7 @@ var Navbar = React.createClass({
             </li>
 
             <li className="nav-item">
-              <Link to="/BoardMembers" className="nav-link">Current Board Members</Link>
+              <Link to="/BoardMembers" className="nav-link">Current Board Members<i className="fa fa-lock" aria-hidden="true" /></Link>
             </li>
 
             <li className="nav-item">
@@ -41,7 +41,7 @@ var Navbar = React.createClass({
                 </a>
 
               <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <Link to="/PetDirectory" className="dropdown-item">View Directory</Link>
+                <Link to="/PetDirectory" className="dropdown-item">View Directory<i className="fa fa-lock" aria-hidden="true" /></Link>
                 <Link to="/PetForm" className="dropdown-item">Add Pet to Directory</Link>
               </div>
             </li>
