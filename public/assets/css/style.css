@@ -203,8 +203,8 @@ nav {
 }
 
 #google-map {
-  min-width: 300px;
-  min-height: 225px;
+  min-width: 100%;
+  min-height: 350px;
 }
 
 #google-calendar {
