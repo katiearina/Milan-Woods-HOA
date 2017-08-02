@@ -64,6 +64,7 @@ punchParent: function () {
   getSignedRequest: function(file){
     var fileObject = { file : { type : file.type, size : file.size } };
     $.ajax({
+      // calls the image route located in routes/routes.js
       url: "/image",
       data : JSON.stringify(fileObject),
       contentType: "application/json; charset=utf-8",
