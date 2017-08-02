@@ -32,6 +32,27 @@ a:active {
   color: #2BC016 !important;
 }
 
+.dropdown-item, 
+.dropdown-item:visited, 
+.dropdown-item:active {
+  text-decoration: none;
+  color: #2E8665 !important;
+}
+
+.dropdown-item:hover {
+  text-decoration: none;
+  color: #2BC016 !important;
+}
+
+#lock-icon, 
+#lock-icon:visited, 
+#lock-icon:active, 
+#lock-icon:hover {
+  text-decoration: none;
+  color: #2E8665 !important;
+  font-size: 14px;
+}
+
 h1 {
   font-weight: 600;
 }
@@ -203,8 +224,8 @@ nav {
 }
 
 #google-map {
-  min-width: 300px;
-  min-height: 225px;
+  min-width: 100%;
+  min-height: 350px;
 }
 
 #google-calendar {
@@ -216,6 +237,10 @@ nav {
 
 #board-member-table {
   text-align: left;
+}
+
+.table td, .table th {
+  text-align: center;
 }
 
 .gov-docs {
