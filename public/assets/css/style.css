@@ -27,7 +27,14 @@ a:active {
   color: #2E8665 !important;
 }
 
-.dropdown-item, .dropdown-item:visited, .dropdown-item:active {
+.nav-link:hover {
+  text-decoration: none;
+  color: #2BC016 !important;
+}
+
+.dropdown-item, 
+.dropdown-item:visited, 
+.dropdown-item:active {
   text-decoration: none;
   color: #2E8665 !important;
 }
@@ -37,9 +44,12 @@ a:active {
   color: #2BC016 !important;
 }
 
-.nav-link:hover {
+#lock-icon, 
+#lock-icon:visited, 
+#lock-icon:active, 
+#lock-icon:hover {
   text-decoration: none;
-  color: #2BC016 !important;
+  color: #2E8665 !important;
 }
 
 h1 {
