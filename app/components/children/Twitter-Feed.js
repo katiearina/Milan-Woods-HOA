@@ -13,7 +13,7 @@ var TwitterFeed = React.createClass({
             username: 'CityofDurhamNC',
             height: '50vh'
           }}
-          onLoad={() => console.log('Timeline is loaded!')}
+          // onLoad={() => console.log('Timeline is loaded!')}
         />
 
       );
