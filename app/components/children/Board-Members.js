@@ -17,8 +17,8 @@ var BoardMembers = React.createClass({
           <tr>
             <td>President</td>
             <td>Steve McNulty</td>
-            <td>Logan Street</td>
-            <td>Not allowed</td>
+            <td>1307 Logan Street</td>
+            <td>November 2018</td>
           </tr>
           <tr>
             <td>Vice President</td>
@@ -29,38 +29,38 @@ var BoardMembers = React.createClass({
           <tr>
             <td>Secretary</td>
             <td>Cathy Guldner</td>
-            <td>ADD HERE</td>
-            <td>ADD HERE</td>
+            <td>1316 Logan Street</td>
+            <td>&mdash;</td>
           </tr>
           <tr>
             <td>Treasurer</td>
-            <td>Charisse</td>
-            <td>Milan Street</td>
-            <td>ADD HERE</td>
+            <td>Charisse Gilbreath</td>
+            <td>1429 Milan Street</td>
+            <td>&mdash;</td>
           </tr>
           <tr>
             <td>Historian</td>
             <td>Rob Corns</td>
-            <td>Logan Street</td>
-            <td>Indefinite</td>
+            <td>1307 Logan Street</td>
+            <td>&mdash;</td>
           </tr>
           <tr>
             <td>Member</td>
-            <td>Fleechia</td>
-            <td>Clifford Drive</td>
-            <td>ADD HERE</td>
+            <td>Fleechia Holloway</td>
+            <td>1001 Clifford Drive</td>
+            <td>&mdash;</td>
           </tr>
           <tr>
             <td>Member</td>
             <td>Lisa Weaver</td>
-            <td>Logan Street</td>
-            <td>ADD HERE</td>
+            <td>1315 Logan Street</td>
+            <td>&mdash;</td>
           </tr>
           <tr>
             <td>Member</td>
             <td>Toni Enoch</td>
-            <td>Milan Street</td>
-            <td>ADD HERE</td>
+            <td>1417 Milan Street</td>
+            <td>&mdash;</td>
           </tr>               
         </tbody>
       </Table>

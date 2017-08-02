@@ -218,6 +218,10 @@ nav {
   text-align: left;
 }
 
+.table td, .table th {
+  text-align: center;
+}
+
 .gov-docs {
   border: 1px solid black;
   width: 200px;
