@@ -42,7 +42,7 @@ var Navbar = React.createClass({
 
               <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <Link to="/PetDirectory" className="dropdown-item">View Directory<i className="fa fa-lock" id="lock-icon" aria-hidden="true" /></Link>
-                <Link to="/PetForm" className="dropdown-item">Add Pet to Directory</Link>
+                <Link to="/PetForm" className="dropdown-item">Add Pet to Directory<i className="fa fa-lock" id="lock-icon" aria-hidden="true" /></Link>
               </div>
             </li>
 
