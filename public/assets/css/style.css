@@ -91,7 +91,7 @@ p {
     background-image: url("../images/header-trees-small.jpg");
 }
 
-#auth-panel {
+/* #auth-panel {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -102,7 +102,7 @@ p {
     overflow: auto;
     padding: 5px;
     border: 2px #26A96C solid;
-}
+} */
 
 .fa {
     padding: 5px;

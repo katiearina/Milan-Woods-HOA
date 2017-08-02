@@ -4,12 +4,15 @@ var Nextdoor = require("../Nextdoor");
 var PayDues = require("../PayDues");
 var MapPin = require("../MapPin");
 var TwitterFeed = require("../Twitter-Feed");
+var AuthPanel = require("../AuthPanel");
 
 var Sidebar = React.createClass({
   render: function() {
     return (
       <div className="col-3 sidebar">
         <div id="sidebar-content">
+          <AuthPanel />
+            <hr />
           <div className="row">
             <div className="col-4">
               <Nextdoor />
