@@ -262,8 +262,10 @@ nav {
     height: auto;
 }
 
-.card {
-    width: 202px !important;
+.arc-app {
+    border: 1px solid black;
+    width: 400px;
+    height: auto;
 }
 
 .modal {
