@@ -38,7 +38,7 @@ New and existing members of the Milan Woods community in Durham, NC
 
 + ~~Must have folder structure that meets MVC Paradigm~~
 
-+ Must meet good quality coding standards (indentation, scoping, naming)
++ ~~Must meet good quality coding standards (indentation, scoping, naming)~~
 
 ## New Technologies Used
 

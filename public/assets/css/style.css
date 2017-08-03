@@ -266,7 +266,7 @@ h5 {
 }
 
 .table-striped tbody tr:nth-of-type(odd){
-  background-color: #d4ffed;
+  background-color: #D4FFED;
 }
 
 .gov-docs {
@@ -302,6 +302,29 @@ h5 {
 
 #pet-photo-default {
   width: 0px;
+}
+
+.contact-list {
+  text-align: left;
+}
+
+.contact-header {
+  text-align: center;
+  font-weight: 600;
+}
+
+.purple-icon {
+  padding: 0px 10px 0px 10px;
+}
+
+.purple-icon, 
+.purple-icon:active, 
+.purple-icon:visited {
+  color: #650052 !important;
+}
+
+.purple-icon:hover {
+  color: #CB00A4 !important;
 }
 
 .modal {
