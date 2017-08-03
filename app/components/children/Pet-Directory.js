@@ -45,9 +45,12 @@ var PetDirectory = React.createClass({
 
     renderContainer: function(){
         return (
+          <div>
+            <h2>Pet Directory</h2>
             <div className="card-deck">
                 {this.renderPets()}
             </div>
+          </div>
         )
     },
 
