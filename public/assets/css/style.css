@@ -292,6 +292,28 @@ h5 {
     height: auto;
 }
 
+.control-label {
+  width: 20%;
+  margin-top: 15px;
+}
+
+.form-control {
+  width: 80%;
+  margin-top: 10px;
+  height: 35px;
+  float: right;
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.pet-photo {
+  float: left;
+}
+
+#pet-photo-default {
+  width: 0px;
+}
+
 .modal {
     position: fixed;
     top: 10px;
