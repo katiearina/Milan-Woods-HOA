@@ -77,8 +77,6 @@ hr {
     font-size: 64px;
     color: #EDF2F1;
     text-shadow: 1px 2px 2px #133629, -1px -1px 0 #395E66, 1px -1px 0 #395E66, -1px 1px 0 #395E66, 1px 1px 0 #395E66;
-    /* text-shadow: 1px 3px 3px #133629;   */
-    /* font-family: 'Judson', serif; */
 }
 
 p {
@@ -301,7 +299,40 @@ h5 {
 }
 
 #pet-photo-default {
-  width: 0px;
+  width: 0px; 
+}
+
+#select-image {
+  position: absolute;
+  left: 22%;
+  width: 130px;
+  background-color: #387D7A;
+  border: 1px solid #48A09C;
+}
+
+#select-image:hover {
+  background-color: #51B1AD;
+  border: 1px solid #408F8B;
+}
+
+#submit {
+  margin-top: 25px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  background-color: #387D7A;
+  border: 1px solid #48A09C;
+}
+
+#submit:hover {
+  background-color: #204846;
+  border: 1px solid #387D7A;
+  font-weight: 600;
+}
+
+#submit-div {
+  float: left;
+  margin-top: 30px;
+  width: 20%;
 }
 
 .contact-list {
