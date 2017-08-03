@@ -58,8 +58,9 @@ h1 {
     font-weight: 600;
 }
 
-h2 {
+h2, h4 {
     font-weight: 600;
+    padding: 20px;
     /* Add some sort of (non-bold?) underline */
 }
 
