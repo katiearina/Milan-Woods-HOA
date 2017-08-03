@@ -194,18 +194,15 @@ punchParent: function () {
                 <div id="pet-photo-default">
                 {/* <input className="form-control" id="upl" name="upl" type="file" onChange={this.handleInputChange}/> */}
                 <img style={{ border : '1px solid black' }} height={150} width={150} src={this.state.image} alt="Upload Pet Image"/>
+                  <label className="btn btn-primary form-control" id="select-image" htmlFor="my-file-selector"><input className="form-control" type="file" onChange={this.fileOnChange} id="my-file-selector" style={{display : "none"}}/>Select Image File</label>
                 </div>
-                <br/>
-                  <label className="btn btn-primary form-control" htmlFor="my-file-selector"><input className="form-control" type="file" onChange={this.fileOnChange} id="my-file-selector" style={{display : "none"}}/>Select Image File</label>
               </div>
             </div>
 
-            <hr/>
-
-            <div className="form-group">
+            <div className="form-group" id="submit-div">
               <div>
-                <button className="btn btn-primary " name="submit" type="submit">
-                  Submit
+                <button className="btn btn-primary" id="submit" name="submit" type="submit">
+                  Submit Pet
                 </button>
               </div>
             </div>
