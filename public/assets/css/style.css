@@ -93,19 +93,6 @@ p {
     background-image: url("../images/header-trees-small.jpg");
 }
 
-/* #auth-panel {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: white;
-    color: #2E8665;
-    min-width: 100px;
-    min-height: 30px;
-    overflow: auto;
-    padding: 5px;
-    border: 2px #26A96C solid;
-} */
-
 .fa {
     padding: 5px;
 }
@@ -166,7 +153,8 @@ nav {
     ;
     margin: 10px;
     text-align: center;
-    height: 95%;
+    min-height: 95vh;
+    max-height: 95vh;
     width: auto;
     overflow: auto;
 }
@@ -183,6 +171,7 @@ h5 {
 
 #main-content {
   padding: 10px 20px 10px 20px;
+  overflow-y: scroll;
 }
 
 #nextdoor {
