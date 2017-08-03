@@ -12,6 +12,7 @@ a:visited {
 
 a:hover {
     text-decoration: none;
+    color: #2BC016
 }
 
 a:active {
@@ -57,8 +58,9 @@ h1 {
     font-weight: 600;
 }
 
-h2 {
+h2, h4 {
     font-weight: 600;
+    padding: 20px;
     /* Add some sort of (non-bold?) underline */
 }
 
@@ -90,19 +92,6 @@ p {
     background-color: #26A96C;
     background-image: url("../images/header-trees-small.jpg");
 }
-
-/* #auth-panel {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: white;
-    color: #2E8665;
-    min-width: 100px;
-    min-height: 30px;
-    overflow: auto;
-    padding: 5px;
-    border: 2px #26A96C solid;
-} */
 
 .fa {
     padding: 5px;
@@ -164,15 +153,25 @@ nav {
     ;
     margin: 10px;
     text-align: center;
-    padding: 10px;
-    height: 95%;
+    min-height: 95vh;
+    max-height: 95vh;
     width: auto;
     overflow: auto;
 }
 
 #sidebar-content {
+    padding: 10px;
     margin-left: 0px;
     overflow: hidden;
+}
+
+h5 {
+  padding-top: 10px;
+}
+
+#main-content {
+  padding: 10px 20px 10px 20px;
+  overflow-y: scroll;
 }
 
 #nextdoor {
@@ -208,11 +207,10 @@ nav {
     visibility: hidden;
     overflow: hidden;
     width: 90px;
-    background-color: plum;
+    text-align: center;
+    /* background-color: plum; */
     color: black;
-    bottom: -20px;
-    left: -15%;
-    /* border-radius: 6px; */
+    bottom: -10px;
 }
 
 .sidebar-links:hover .hover-text {
@@ -241,9 +239,13 @@ nav {
 
 #google-calendar {
     width: 90%;
-    min-height: 70vh;
+    min-height: 75vh;
     /* min-height: 300px; */
     border: 1px solid black;
+}
+
+.table {
+  border: 1px solid #eceeef;
 }
 
 #board-member-table {
@@ -255,14 +257,74 @@ nav {
     text-align: center;
 }
 
+.table th {
+  text-transform: uppercase;
+}
+
+.position {
+  font-weight: 600;
+}
+
+.table-striped tbody tr:nth-of-type(odd){
+  background-color: #D4FFED;
+}
+
 .gov-docs {
     border: 1px solid black;
     width: 200px;
     height: auto;
 }
 
-.card {
-    width: 202px !important;
+.arc-app {
+    border: 1px solid black;
+    width: 400px;
+    height: auto;
+}
+
+.control-label {
+  width: 20%;
+  margin-top: 15px;
+}
+
+.form-control {
+  width: 75%;
+  margin-top: 10px;
+  margin-right: 5%;
+  height: 35px;
+  float: right;
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.pet-photo {
+  float: left;
+}
+
+#pet-photo-default {
+  width: 0px;
+}
+
+.contact-list {
+  text-align: left;
+}
+
+.contact-header {
+  text-align: center;
+  font-weight: 600;
+}
+
+.purple-icon {
+  padding: 0px 10px 0px 10px;
+}
+
+.purple-icon, 
+.purple-icon:active, 
+.purple-icon:visited {
+  color: #650052 !important;
+}
+
+.purple-icon:hover {
+  color: #CB00A4 !important;
 }
 
 .modal {
@@ -274,6 +336,10 @@ nav {
     z-index: 10040;
     overflow: auto;
     overflow-y: auto;
+}
+
+.modal-dialog {
+  top: 150px;
 }
 
 .modal-pdf {

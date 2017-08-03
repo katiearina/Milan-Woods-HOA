@@ -144,72 +144,84 @@ punchParent: function () {
 
   render: function() {
     return (
-    <div>
-    <form onSubmit={this.handleSubmit} encType="multipart/form-data">
-     <div className="form-group ">
-      <label className="control-label requiredField" htmlFor="petname">
-       Pet Name
-       <span className="asteriskField">*</span>
-      </label>
-      <input className="form-control" id="petname" name="petname" type="text" onChange={this.handleInputChange}/>
-     </div>
-     <div className="form-group ">
-      <label className="control-label requiredField" htmlFor="ownername">
-       Owner Name
-       <span className="asteriskField">*</span>
-      </label>
-      <input className="form-control" id="ownername" name="ownername" type="text" onChange={this.handleInputChange}/>
-     </div>
-     <div className="form-group ">
-      <label className="control-label " htmlFor="address">
-       Address
-      </label>
-      <input className="form-control" id="address" name="address" type="text" onChange={this.handleInputChange}/>
-     </div>
-     <div className="form-group ">
-      <label className="control-label " htmlFor="tel">
-       Telephone #
-      </label>
-      <input className="form-control" id="tel" name="tel" type="text" onChange={this.handleInputChange}/>
-     </div>
-     <div className="form-group ">
-      <label className="control-label " htmlFor="tel">
-       Description
-      </label>
-      <input className="form-control" id="details" name="details" type="textarea" rows={5} onChange={this.handleInputChange}/>
-     </div>
-      <div className="form-group ">
       <div>
-      <label className="control-label col-3" htmlFor="upl">
-       Pet Photo
-      </label>
+        <h4>Add a Pet to the Directory</h4>
+          <form onSubmit={this.handleSubmit} encType="multipart/form-data">
+            <div className="form-group ">
+              <label className="control-label requiredField" htmlFor="petname">
+                Pet Name
+                <span className="asteriskField">*</span>:
+              </label>
+              <input className="form-control" id="petname" name="petname" type="text" placeholder="Required" onChange={this.handleInputChange}/>
+            </div>
 
-      <div>
-      {/* <input className="form-control" id="upl" name="upl" type="file" onChange={this.handleInputChange}/> */}
-      <img style={{ border : '1px solid black' }} height={150} width={150} src={this.state.image} alt="Upload Pet Image"/>
-      </div>
-      <br/>
-      <label className="btn btn-primary" htmlFor="my-file-selector"><input className="form-control" type="file" onChange={this.fileOnChange} id="my-file-selector" style={{display : "none"}}/>Select Image File</label>
-      </div>
-     </div>
-     <hr/>
-     <div className="form-group">
-      <div>
-       <button className="btn btn-primary " name="submit" type="submit">
-        Submit
-       </button>
-      </div>
-     </div>
-    </form>
+            <div className="form-group ">
+              <label className="control-label requiredField" htmlFor="ownername">
+                Owner Name
+                <span className="asteriskField">*</span>:
+              </label>
+              <input className="form-control" id="ownername" name="ownername" type="text" placeholder="Required" onChange={this.handleInputChange}/>
+            </div>
+
+            <div className="form-group ">
+              <label className="control-label " htmlFor="address">
+                Address
+                <span className="asteriskField">*</span>:
+              </label>
+              <input className="form-control" id="address" name="address" type="text" placeholder="Required" onChange={this.handleInputChange}/>
+            </div>
+
+            <div className="form-group ">
+              <label className="control-label " htmlFor="tel">
+                Telephone Number
+                <span className="asteriskField">*</span>:
+              </label>
+              <input className="form-control" id="tel" name="tel" type="text" placeholder="Required" onChange={this.handleInputChange}/>
+            </div>
+
+            <div className="form-group ">
+              <label className="control-label " htmlFor="tel">
+                Description:
+              </label>
+              <input className="form-control" id="details" name="details" type="textarea" rows={5} onChange={this.handleInputChange}/>
+            </div>
+            
+            <div className="form-group">
+              <div>
+                <label className="control-label pet-photo" htmlFor="upl">
+                  Pet Photo:
+                </label>
+                <div id="pet-photo-default">
+                {/* <input className="form-control" id="upl" name="upl" type="file" onChange={this.handleInputChange}/> */}
+                <img style={{ border : '1px solid black' }} height={150} width={150} src={this.state.image} alt="Upload Pet Image"/>
+                </div>
+                <br/>
+                  <label className="btn btn-primary form-control" htmlFor="my-file-selector"><input className="form-control" type="file" onChange={this.fileOnChange} id="my-file-selector" style={{display : "none"}}/>Select Image File</label>
+              </div>
+            </div>
+
+            <hr/>
+
+            <div className="form-group">
+              <div>
+                <button className="btn btn-primary " name="submit" type="submit">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+
     {
       this.state.fireSuccess == true &&
       <PetSuccess closeModal={this.punchParent} />
     }
+
     {
       this.state.fireFailure == true &&
       <PetFailure closeModal={this.punchParent}/>
     }
-    </div>
+
+      </div>
 
     );
   }
