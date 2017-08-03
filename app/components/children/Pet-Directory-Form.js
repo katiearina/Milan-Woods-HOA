@@ -165,16 +165,18 @@ punchParent: function () {
 
             <div className="form-group ">
               <label className="control-label " htmlFor="address">
-                Address:
+                Address
+                <span className="asteriskField">*</span>:
               </label>
-              <input className="form-control" id="address" name="address" type="text" onChange={this.handleInputChange}/>
+              <input className="form-control" id="address" name="address" type="text" placeholder="Required" onChange={this.handleInputChange}/>
             </div>
 
             <div className="form-group ">
               <label className="control-label " htmlFor="tel">
-                Telephone Number:
+                Telephone Number
+                <span className="asteriskField">*</span>:
               </label>
-              <input className="form-control" id="tel" name="tel" type="text" onChange={this.handleInputChange}/>
+              <input className="form-control" id="tel" name="tel" type="text" placeholder="Required" onChange={this.handleInputChange}/>
             </div>
 
             <div className="form-group ">

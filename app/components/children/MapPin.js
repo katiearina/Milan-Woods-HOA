@@ -33,7 +33,7 @@ class MapPin extends React.Component{
     return (
       <div>
         <div className="sidebar-links">
-          <span className="hover-text">Show on Map</span>
+          {/*<span className="hover-text">Show on Map</span>*/}
             <span className="fa-stack fa-lg" onClick={this.toggle}>
               <i id="map" className="fa fa-map-o fa-stack-2x"></i>
               <i id="map-pin" className="fa fa-map-marker fa-stack-1x"></i>

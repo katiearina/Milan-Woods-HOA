@@ -298,8 +298,9 @@ h5 {
 }
 
 .form-control {
-  width: 80%;
+  width: 75%;
   margin-top: 10px;
+  margin-right: 5%;
   height: 35px;
   float: right;
   font-size: 12px;
@@ -323,6 +324,10 @@ h5 {
     z-index: 10040;
     overflow: auto;
     overflow-y: auto;
+}
+
+.modal-dialog {
+  top: 150px;
 }
 
 .modal-pdf {
