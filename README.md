@@ -52,5 +52,5 @@ New and existing members of the Milan Woods community in Durham, NC
 *Coming Soon*
 
 ## Contributors
-+ [Adrian Jensen](https://github.com/katiearina "GitHub - Adrian") :facepunch:
-+ [Katie Geckle](https://github.com/katiearina "GitHub - Katie") :boom:
++ [Adrian Jensen](https://github.com/katiearina "GitHub - Adrian") ![South African Flag Emoji](https://user-images.githubusercontent.com/22947371/28902466-0575c780-77cd-11e7-85aa-0a2693b41b1b.png "Adrian")
++ [Katie Geckle](https://github.com/katiearina "GitHub - Katie") ![Zombie Girl Emoji](https://user-images.githubusercontent.com/22947371/28902467-057ed690-77cd-11e7-98ff-743763d4f48c.png "Katie")
