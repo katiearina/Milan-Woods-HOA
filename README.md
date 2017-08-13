@@ -2,19 +2,34 @@
 Neighborhood website for community in Durham, NC
 
 ## Description
-*Coming Soon*
+This neighborhood website was created for members of the preexisting Milan Woods community in Durham, North Carolina. The neighborhood has been around for 30 years and, to this point, documents have been given out as printed documents to community members as they move in to the neighborhood. 
+
+This website aims to make these documents (and related information) more dynamic and easy to access. This information can be referenced, updated, and printed by anyone at any time, and also includes local calendar events and recent tweets from the City of Durham.
 
 ### Elevator Pitch
 *Coming Soon*
 
 ### Target User
-New and existing members of the Milan Woods community in Durham, NC
+All members, both new and established, of the Milan Woods community in Durham, North Carolina.
 
 ### MVP
-*Coming Soon*
++ Display Governing Documents
++ ~~Fillable PDF for Architectural Application~~ (Move to Stretch Goals due to lack of free option)
++ Basic Layout (Single Page App)
++ Contact information for Board Members
++ Link to join Nextdoor
++ Pet Directory form with photo upload capabilities
++ Link to pay dues online through MPMNC website
 
 ### Stretch Goals
-*Coming Soon*
++ Durham PD Twitter – reload/dynamic updates using Socket.io
++ Google Calendar for happenings
++ Trash day information/holiday schedule
++ Create online form submittal for Architectural App
++ Local weather API
++ Scale nicely on mobile
++ Authentication required for specific pages (Board Members, Pet Directory)
++ Make Pet Directory searchable
 
 ### Original Mockups
 *Coming Soon*
