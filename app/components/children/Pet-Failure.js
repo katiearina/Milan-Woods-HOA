@@ -7,7 +7,7 @@ var PetFailure = React.createClass({
   render: function(){
       return (
         <div className="modal fade" id="modal PetFailure">
-          <div className="modal-dialog" role="document">
+          <div className="modal-dialog" id="petFailure-modal-dialog" role="document">
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title" id="failure-modal-title">Oh {emojify(':poop:')}!</h5>

@@ -169,7 +169,7 @@ h5 {
 
 #main-content {
   padding: 10px 20px 10px 20px;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 #nextdoor {
@@ -217,17 +217,6 @@ h5 {
 
 #main-row {
     min-height: 80vh;
-}
-
-.modal {
-    top: 50%;
-    right: 20%;
-    display: inline;
-    opacity: 1;
-}
-
-#failure-modal-title {
-    margin: 15px auto 0px auto;
 }
 
 #google-map {
@@ -367,15 +356,17 @@ h5 {
     z-index: 10040;
     overflow: auto;
     overflow-y: auto;
+    display: inline;
+    opacity: 1;
 }
 
-.modal-dialog {
-  top: 150px;
+.modal-header {
+  padding: 5px 15px;
 }
 
 .modal-pdf {
     width: 100% !important;
-    height: 500px;
+    height: 550px;
 }
 
 .modal-close {
@@ -387,7 +378,20 @@ h5 {
 }
 
 .modal-title {
-    margin: 0px auto;
+     margin: 0px auto; 
+}
+ 
+ #PetSuccess, #PetFailure {
+    top: 50% !important;
+    right: 20% !important;
+}  
+
+#petFailure-modal-dialog, #petSuccess-modal-dialog {
+  top: 150px;
+}
+
+#failure-modal-title {
+    margin: 15px auto 0px auto;
 }
 
 .row {

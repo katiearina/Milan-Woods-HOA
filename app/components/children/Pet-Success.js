@@ -7,7 +7,7 @@ var PetSuccess = React.createClass({
   render: function(){
       return (
         <div className="modal fade" id="modal PetSuccess">
-          <div className="modal-dialog" role="document">
+          <div className="modal-dialog" id="petSuccess-modal-dialog" role="document">
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title">{emojify(':dog: Success! :smiley_cat:')}</h5>
