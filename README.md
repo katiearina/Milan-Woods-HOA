@@ -6,9 +6,6 @@ This neighborhood website was created for members of the preexisting Milan Woods
 
 This website aims to make these documents (and related information) more dynamic and easy to access. This information can be referenced, updated, and printed by anyone at any time, and also includes local calendar events and recent tweets from the City of Durham.
 
-### Elevator Pitch
-*Coming Soon*
-
 ### Target User
 All members, both new and established, of the Milan Woods community in Durham, North Carolina.
 
